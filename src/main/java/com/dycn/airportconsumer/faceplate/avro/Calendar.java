@@ -11,7 +11,7 @@ import org.apache.avro.specific.SpecificData;
 @org.apache.avro.specific.AvroGenerated
 public class Calendar extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = 4258533320134544861L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Calendar\",\"namespace\":\"com.dycn.healthairport.faceplate.avro\",\"fields\":[{\"name\":\"startDate\",\"type\":\"long\"},{\"name\":\"restingDays\",\"type\":{\"type\":\"array\",\"items\":\"int\"}}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Calendar\",\"namespace\":\"com.dycn.airportconsumer.faceplate.avro\",\"fields\":[{\"name\":\"startDate\",\"type\":\"long\"},{\"name\":\"restingDays\",\"type\":{\"type\":\"array\",\"items\":\"int\"}}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public long startDate;
   @Deprecated public java.util.List<Integer> restingDays;
@@ -89,8 +89,8 @@ public class Calendar extends org.apache.avro.specific.SpecificRecordBase implem
    * Creates a new Calendar RecordBuilder.
    * @return A new Calendar RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.Calendar.Builder newBuilder() {
-    return new com.dycn.healthairport.faceplate.avro.Calendar.Builder();
+  public static com.dycn.airportconsumer.faceplate.avro.Calendar.Builder newBuilder() {
+    return new com.dycn.airportconsumer.faceplate.avro.Calendar.Builder();
   }
 
   /**
@@ -98,8 +98,8 @@ public class Calendar extends org.apache.avro.specific.SpecificRecordBase implem
    * @param other The existing builder to copy.
    * @return A new Calendar RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.Calendar.Builder newBuilder(com.dycn.healthairport.faceplate.avro.Calendar.Builder other) {
-    return new com.dycn.healthairport.faceplate.avro.Calendar.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.Calendar.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.Calendar.Builder other) {
+    return new com.dycn.airportconsumer.faceplate.avro.Calendar.Builder(other);
   }
 
   /**
@@ -107,8 +107,8 @@ public class Calendar extends org.apache.avro.specific.SpecificRecordBase implem
    * @param other The existing instance to copy.
    * @return A new Calendar RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.Calendar.Builder newBuilder(com.dycn.healthairport.faceplate.avro.Calendar other) {
-    return new com.dycn.healthairport.faceplate.avro.Calendar.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.Calendar.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.Calendar other) {
+    return new com.dycn.airportconsumer.faceplate.avro.Calendar.Builder(other);
   }
 
   /**
@@ -129,7 +129,7 @@ public class Calendar extends org.apache.avro.specific.SpecificRecordBase implem
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.Calendar.Builder other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.Calendar.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.startDate)) {
         this.startDate = data().deepCopy(fields()[0].schema(), other.startDate);
@@ -145,7 +145,7 @@ public class Calendar extends org.apache.avro.specific.SpecificRecordBase implem
      * Creates a Builder by copying an existing Calendar instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.Calendar other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.Calendar other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.startDate)) {
         this.startDate = data().deepCopy(fields()[0].schema(), other.startDate);
@@ -170,7 +170,7 @@ public class Calendar extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'startDate'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Calendar.Builder setStartDate(long value) {
+    public com.dycn.airportconsumer.faceplate.avro.Calendar.Builder setStartDate(long value) {
       validate(fields()[0], value);
       this.startDate = value;
       fieldSetFlags()[0] = true;
@@ -190,7 +190,7 @@ public class Calendar extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'startDate' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Calendar.Builder clearStartDate() {
+    public com.dycn.airportconsumer.faceplate.avro.Calendar.Builder clearStartDate() {
       fieldSetFlags()[0] = false;
       return this;
     }
@@ -208,7 +208,7 @@ public class Calendar extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'restingDays'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Calendar.Builder setRestingDays(java.util.List<Integer> value) {
+    public com.dycn.airportconsumer.faceplate.avro.Calendar.Builder setRestingDays(java.util.List<Integer> value) {
       validate(fields()[1], value);
       this.restingDays = value;
       fieldSetFlags()[1] = true;
@@ -228,7 +228,7 @@ public class Calendar extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'restingDays' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Calendar.Builder clearRestingDays() {
+    public com.dycn.airportconsumer.faceplate.avro.Calendar.Builder clearRestingDays() {
       restingDays = null;
       fieldSetFlags()[1] = false;
       return this;

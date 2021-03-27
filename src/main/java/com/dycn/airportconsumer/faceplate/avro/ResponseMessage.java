@@ -12,7 +12,7 @@ import org.apache.avro.specific.SpecificData;
 @org.apache.avro.specific.AvroGenerated
 public class ResponseMessage extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = 6143360546320301629L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ResponseMessage\",\"namespace\":\"com.dycn.healthairport.faceplate.avro\",\"doc\":\"图片下发response\",\"fields\":[{\"name\":\"personId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"rtn\",\"type\":[\"null\",\"int\"]},{\"name\":\"message\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ResponseMessage\",\"namespace\":\"com.dycn.airportconsumer.faceplate.avro\",\"doc\":\"图片下发response\",\"fields\":[{\"name\":\"personId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"rtn\",\"type\":[\"null\",\"int\"]},{\"name\":\"message\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public String personId;
   @Deprecated public Integer rtn;
@@ -111,8 +111,8 @@ public class ResponseMessage extends org.apache.avro.specific.SpecificRecordBase
    * Creates a new ResponseMessage RecordBuilder.
    * @return A new ResponseMessage RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.ResponseMessage.Builder newBuilder() {
-    return new com.dycn.healthairport.faceplate.avro.ResponseMessage.Builder();
+  public static com.dycn.airportconsumer.faceplate.avro.ResponseMessage.Builder newBuilder() {
+    return new com.dycn.airportconsumer.faceplate.avro.ResponseMessage.Builder();
   }
 
   /**
@@ -120,8 +120,8 @@ public class ResponseMessage extends org.apache.avro.specific.SpecificRecordBase
    * @param other The existing builder to copy.
    * @return A new ResponseMessage RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.ResponseMessage.Builder newBuilder(com.dycn.healthairport.faceplate.avro.ResponseMessage.Builder other) {
-    return new com.dycn.healthairport.faceplate.avro.ResponseMessage.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.ResponseMessage.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.ResponseMessage.Builder other) {
+    return new com.dycn.airportconsumer.faceplate.avro.ResponseMessage.Builder(other);
   }
 
   /**
@@ -129,8 +129,8 @@ public class ResponseMessage extends org.apache.avro.specific.SpecificRecordBase
    * @param other The existing instance to copy.
    * @return A new ResponseMessage RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.ResponseMessage.Builder newBuilder(com.dycn.healthairport.faceplate.avro.ResponseMessage other) {
-    return new com.dycn.healthairport.faceplate.avro.ResponseMessage.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.ResponseMessage.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.ResponseMessage other) {
+    return new com.dycn.airportconsumer.faceplate.avro.ResponseMessage.Builder(other);
   }
 
   /**
@@ -152,7 +152,7 @@ public class ResponseMessage extends org.apache.avro.specific.SpecificRecordBase
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.ResponseMessage.Builder other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.ResponseMessage.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.personId)) {
         this.personId = data().deepCopy(fields()[0].schema(), other.personId);
@@ -172,7 +172,7 @@ public class ResponseMessage extends org.apache.avro.specific.SpecificRecordBase
      * Creates a Builder by copying an existing ResponseMessage instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.ResponseMessage other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.ResponseMessage other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.personId)) {
         this.personId = data().deepCopy(fields()[0].schema(), other.personId);
@@ -201,7 +201,7 @@ public class ResponseMessage extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'personId'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.ResponseMessage.Builder setPersonId(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.ResponseMessage.Builder setPersonId(String value) {
       validate(fields()[0], value);
       this.personId = value;
       fieldSetFlags()[0] = true;
@@ -221,7 +221,7 @@ public class ResponseMessage extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'personId' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.ResponseMessage.Builder clearPersonId() {
+    public com.dycn.airportconsumer.faceplate.avro.ResponseMessage.Builder clearPersonId() {
       personId = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -240,7 +240,7 @@ public class ResponseMessage extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'rtn'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.ResponseMessage.Builder setRtn(Integer value) {
+    public com.dycn.airportconsumer.faceplate.avro.ResponseMessage.Builder setRtn(Integer value) {
       validate(fields()[1], value);
       this.rtn = value;
       fieldSetFlags()[1] = true;
@@ -260,7 +260,7 @@ public class ResponseMessage extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'rtn' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.ResponseMessage.Builder clearRtn() {
+    public com.dycn.airportconsumer.faceplate.avro.ResponseMessage.Builder clearRtn() {
       rtn = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -279,7 +279,7 @@ public class ResponseMessage extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'message'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.ResponseMessage.Builder setMessage(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.ResponseMessage.Builder setMessage(String value) {
       validate(fields()[2], value);
       this.message = value;
       fieldSetFlags()[2] = true;
@@ -299,7 +299,7 @@ public class ResponseMessage extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'message' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.ResponseMessage.Builder clearMessage() {
+    public com.dycn.airportconsumer.faceplate.avro.ResponseMessage.Builder clearMessage() {
       message = null;
       fieldSetFlags()[2] = false;
       return this;

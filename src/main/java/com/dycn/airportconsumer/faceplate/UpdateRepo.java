@@ -1,8 +1,10 @@
 package com.dycn.airportconsumer.faceplate;
 
 import com.dycn.airportconsumer.faceplate.avro.Operation;
+import com.dycn.airportconsumer.faceplate.avro.OperationType;
 import com.dycn.airportconsumer.faceplate.avro.Person;
 import org.apache.avro.generic.GenericRecord;
+import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,7 +1,6 @@
 package com.dycn.airportconsumer.common;
 
 import com.alibaba.fastjson.JSON;
-import com.dycn.healthairport.exception.CommonException;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.http.HttpServletResponse;
@@ -46,23 +45,5 @@ public class ResponseUtil {
         }
     }
 
-    /**
-     * 往 response 写出 json
-     *
-     * @param response  响应
-     * @param exception 异常
-     */
-    public static void renderJson(HttpServletResponse response, CommonException exception) {
-        try {
-            response.setHeader("Access-Control-Allow-Origin", "*");
-            response.setHeader("Access-Control-Allow-Methods", "*");
-            response.setContentType("application/json;charset=UTF-8");
-            response.setStatus(200);
 
-            response.getWriter()
-                    .write(JSON.toJSONString(ApiResponse.ofException(exception)));
-        } catch (IOException e) {
-            log.error("Response写出JSON异常，", e);
-        }
-    }
 }

@@ -11,7 +11,7 @@ import org.apache.avro.specific.SpecificData;
 @org.apache.avro.specific.AvroGenerated
 public class ErrorMessage extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = -8730529227469547852L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ErrorMessage\",\"namespace\":\"com.dycn.healthairport.faceplate.avro\",\"fields\":[{\"name\":\"message\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ErrorMessage\",\"namespace\":\"com.dycn.airportconsumer.faceplate.avro\",\"fields\":[{\"name\":\"message\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public String message;
 
@@ -68,8 +68,8 @@ public class ErrorMessage extends org.apache.avro.specific.SpecificRecordBase im
    * Creates a new ErrorMessage RecordBuilder.
    * @return A new ErrorMessage RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.ErrorMessage.Builder newBuilder() {
-    return new com.dycn.healthairport.faceplate.avro.ErrorMessage.Builder();
+  public static com.dycn.airportconsumer.faceplate.avro.ErrorMessage.Builder newBuilder() {
+    return new com.dycn.airportconsumer.faceplate.avro.ErrorMessage.Builder();
   }
 
   /**
@@ -77,8 +77,8 @@ public class ErrorMessage extends org.apache.avro.specific.SpecificRecordBase im
    * @param other The existing builder to copy.
    * @return A new ErrorMessage RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.ErrorMessage.Builder newBuilder(com.dycn.healthairport.faceplate.avro.ErrorMessage.Builder other) {
-    return new com.dycn.healthairport.faceplate.avro.ErrorMessage.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.ErrorMessage.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.ErrorMessage.Builder other) {
+    return new com.dycn.airportconsumer.faceplate.avro.ErrorMessage.Builder(other);
   }
 
   /**
@@ -86,8 +86,8 @@ public class ErrorMessage extends org.apache.avro.specific.SpecificRecordBase im
    * @param other The existing instance to copy.
    * @return A new ErrorMessage RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.ErrorMessage.Builder newBuilder(com.dycn.healthairport.faceplate.avro.ErrorMessage other) {
-    return new com.dycn.healthairport.faceplate.avro.ErrorMessage.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.ErrorMessage.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.ErrorMessage other) {
+    return new com.dycn.airportconsumer.faceplate.avro.ErrorMessage.Builder(other);
   }
 
   /**
@@ -107,7 +107,7 @@ public class ErrorMessage extends org.apache.avro.specific.SpecificRecordBase im
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.ErrorMessage.Builder other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.ErrorMessage.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.message)) {
         this.message = data().deepCopy(fields()[0].schema(), other.message);
@@ -119,7 +119,7 @@ public class ErrorMessage extends org.apache.avro.specific.SpecificRecordBase im
      * Creates a Builder by copying an existing ErrorMessage instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.ErrorMessage other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.ErrorMessage other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.message)) {
         this.message = data().deepCopy(fields()[0].schema(), other.message);
@@ -140,7 +140,7 @@ public class ErrorMessage extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'message'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.ErrorMessage.Builder setMessage(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.ErrorMessage.Builder setMessage(String value) {
       validate(fields()[0], value);
       this.message = value;
       fieldSetFlags()[0] = true;
@@ -160,7 +160,7 @@ public class ErrorMessage extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'message' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.ErrorMessage.Builder clearMessage() {
+    public com.dycn.airportconsumer.faceplate.avro.ErrorMessage.Builder clearMessage() {
       message = null;
       fieldSetFlags()[0] = false;
       return this;

@@ -11,10 +11,10 @@ import org.apache.avro.specific.SpecificData;
 @org.apache.avro.specific.AvroGenerated
 public class Policy extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = -4997385627749772128L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Policy\",\"namespace\":\"com.dycn.healthairport.faceplate.avro\",\"fields\":[{\"name\":\"calendar\",\"type\":{\"type\":\"record\",\"name\":\"Calendar\",\"fields\":[{\"name\":\"startDate\",\"type\":\"long\"},{\"name\":\"restingDays\",\"type\":{\"type\":\"array\",\"items\":\"int\"}}]}},{\"name\":\"passTime\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"TimeSpan\",\"fields\":[{\"name\":\"startSeconds\",\"type\":\"int\"},{\"name\":\"span\",\"type\":\"int\"}]}}},{\"name\":\"passQuota\",\"type\":\"int\"},{\"name\":\"validTimestamp\",\"type\":\"long\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Policy\",\"namespace\":\"com.dycn.airportconsumer.faceplate.avro\",\"fields\":[{\"name\":\"calendar\",\"type\":{\"type\":\"record\",\"name\":\"Calendar\",\"fields\":[{\"name\":\"startDate\",\"type\":\"long\"},{\"name\":\"restingDays\",\"type\":{\"type\":\"array\",\"items\":\"int\"}}]}},{\"name\":\"passTime\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"TimeSpan\",\"fields\":[{\"name\":\"startSeconds\",\"type\":\"int\"},{\"name\":\"span\",\"type\":\"int\"}]}}},{\"name\":\"passQuota\",\"type\":\"int\"},{\"name\":\"validTimestamp\",\"type\":\"long\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
-  @Deprecated public com.dycn.healthairport.faceplate.avro.Calendar calendar;
-  @Deprecated public java.util.List<com.dycn.healthairport.faceplate.avro.TimeSpan> passTime;
+  @Deprecated public com.dycn.airportconsumer.faceplate.avro.Calendar calendar;
+  @Deprecated public java.util.List<com.dycn.airportconsumer.faceplate.avro.TimeSpan> passTime;
   @Deprecated public int passQuota;
   @Deprecated public long validTimestamp;
 
@@ -32,7 +32,7 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param passQuota The new value for passQuota
    * @param validTimestamp The new value for validTimestamp
    */
-  public Policy(com.dycn.healthairport.faceplate.avro.Calendar calendar, java.util.List<com.dycn.healthairport.faceplate.avro.TimeSpan> passTime, Integer passQuota, Long validTimestamp) {
+  public Policy(com.dycn.airportconsumer.faceplate.avro.Calendar calendar, java.util.List<com.dycn.airportconsumer.faceplate.avro.TimeSpan> passTime, Integer passQuota, Long validTimestamp) {
     this.calendar = calendar;
     this.passTime = passTime;
     this.passQuota = passQuota;
@@ -55,8 +55,8 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
   @SuppressWarnings(value="unchecked")
   public void put(int field$, Object value$) {
     switch (field$) {
-    case 0: calendar = (com.dycn.healthairport.faceplate.avro.Calendar)value$; break;
-    case 1: passTime = (java.util.List<com.dycn.healthairport.faceplate.avro.TimeSpan>)value$; break;
+    case 0: calendar = (com.dycn.airportconsumer.faceplate.avro.Calendar)value$; break;
+    case 1: passTime = (java.util.List<com.dycn.airportconsumer.faceplate.avro.TimeSpan>)value$; break;
     case 2: passQuota = (Integer)value$; break;
     case 3: validTimestamp = (Long)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
@@ -67,7 +67,7 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
    * Gets the value of the 'calendar' field.
    * @return The value of the 'calendar' field.
    */
-  public com.dycn.healthairport.faceplate.avro.Calendar getCalendar() {
+  public com.dycn.airportconsumer.faceplate.avro.Calendar getCalendar() {
     return calendar;
   }
 
@@ -75,7 +75,7 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
    * Sets the value of the 'calendar' field.
    * @param value the value to set.
    */
-  public void setCalendar(com.dycn.healthairport.faceplate.avro.Calendar value) {
+  public void setCalendar(com.dycn.airportconsumer.faceplate.avro.Calendar value) {
     this.calendar = value;
   }
 
@@ -83,7 +83,7 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
    * Gets the value of the 'passTime' field.
    * @return The value of the 'passTime' field.
    */
-  public java.util.List<com.dycn.healthairport.faceplate.avro.TimeSpan> getPassTime() {
+  public java.util.List<com.dycn.airportconsumer.faceplate.avro.TimeSpan> getPassTime() {
     return passTime;
   }
 
@@ -91,7 +91,7 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
    * Sets the value of the 'passTime' field.
    * @param value the value to set.
    */
-  public void setPassTime(java.util.List<com.dycn.healthairport.faceplate.avro.TimeSpan> value) {
+  public void setPassTime(java.util.List<com.dycn.airportconsumer.faceplate.avro.TimeSpan> value) {
     this.passTime = value;
   }
 
@@ -131,8 +131,8 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
    * Creates a new Policy RecordBuilder.
    * @return A new Policy RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.Policy.Builder newBuilder() {
-    return new com.dycn.healthairport.faceplate.avro.Policy.Builder();
+  public static com.dycn.airportconsumer.faceplate.avro.Policy.Builder newBuilder() {
+    return new com.dycn.airportconsumer.faceplate.avro.Policy.Builder();
   }
 
   /**
@@ -140,8 +140,8 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param other The existing builder to copy.
    * @return A new Policy RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.Policy.Builder newBuilder(com.dycn.healthairport.faceplate.avro.Policy.Builder other) {
-    return new com.dycn.healthairport.faceplate.avro.Policy.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.Policy.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.Policy.Builder other) {
+    return new com.dycn.airportconsumer.faceplate.avro.Policy.Builder(other);
   }
 
   /**
@@ -149,8 +149,8 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param other The existing instance to copy.
    * @return A new Policy RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.Policy.Builder newBuilder(com.dycn.healthairport.faceplate.avro.Policy other) {
-    return new com.dycn.healthairport.faceplate.avro.Policy.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.Policy.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.Policy other) {
+    return new com.dycn.airportconsumer.faceplate.avro.Policy.Builder(other);
   }
 
   /**
@@ -159,9 +159,9 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<Policy>
     implements org.apache.avro.data.RecordBuilder<Policy> {
 
-    private com.dycn.healthairport.faceplate.avro.Calendar calendar;
-    private com.dycn.healthairport.faceplate.avro.Calendar.Builder calendarBuilder;
-    private java.util.List<com.dycn.healthairport.faceplate.avro.TimeSpan> passTime;
+    private com.dycn.airportconsumer.faceplate.avro.Calendar calendar;
+    private com.dycn.airportconsumer.faceplate.avro.Calendar.Builder calendarBuilder;
+    private java.util.List<com.dycn.airportconsumer.faceplate.avro.TimeSpan> passTime;
     private int passQuota;
     private long validTimestamp;
 
@@ -174,14 +174,14 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.Policy.Builder other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.Policy.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.calendar)) {
         this.calendar = data().deepCopy(fields()[0].schema(), other.calendar);
         fieldSetFlags()[0] = true;
       }
       if (other.hasCalendarBuilder()) {
-        this.calendarBuilder = com.dycn.healthairport.faceplate.avro.Calendar.newBuilder(other.getCalendarBuilder());
+        this.calendarBuilder = com.dycn.airportconsumer.faceplate.avro.Calendar.newBuilder(other.getCalendarBuilder());
       }
       if (isValidValue(fields()[1], other.passTime)) {
         this.passTime = data().deepCopy(fields()[1].schema(), other.passTime);
@@ -201,7 +201,7 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
      * Creates a Builder by copying an existing Policy instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.Policy other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.Policy other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.calendar)) {
         this.calendar = data().deepCopy(fields()[0].schema(), other.calendar);
@@ -226,7 +226,7 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
       * Gets the value of the 'calendar' field.
       * @return The value.
       */
-    public com.dycn.healthairport.faceplate.avro.Calendar getCalendar() {
+    public com.dycn.airportconsumer.faceplate.avro.Calendar getCalendar() {
       return calendar;
     }
 
@@ -235,7 +235,7 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'calendar'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Policy.Builder setCalendar(com.dycn.healthairport.faceplate.avro.Calendar value) {
+    public com.dycn.airportconsumer.faceplate.avro.Policy.Builder setCalendar(com.dycn.airportconsumer.faceplate.avro.Calendar value) {
       validate(fields()[0], value);
       this.calendarBuilder = null;
       this.calendar = value;
@@ -255,12 +255,12 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
      * Gets the Builder instance for the 'calendar' field and creates one if it doesn't exist yet.
      * @return This builder.
      */
-    public com.dycn.healthairport.faceplate.avro.Calendar.Builder getCalendarBuilder() {
+    public com.dycn.airportconsumer.faceplate.avro.Calendar.Builder getCalendarBuilder() {
       if (calendarBuilder == null) {
         if (hasCalendar()) {
-          setCalendarBuilder(com.dycn.healthairport.faceplate.avro.Calendar.newBuilder(calendar));
+          setCalendarBuilder(com.dycn.airportconsumer.faceplate.avro.Calendar.newBuilder(calendar));
         } else {
-          setCalendarBuilder(com.dycn.healthairport.faceplate.avro.Calendar.newBuilder());
+          setCalendarBuilder(com.dycn.airportconsumer.faceplate.avro.Calendar.newBuilder());
         }
       }
       return calendarBuilder;
@@ -271,7 +271,7 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
      * @param value The builder instance that must be set.
      * @return This builder.
      */
-    public com.dycn.healthairport.faceplate.avro.Policy.Builder setCalendarBuilder(com.dycn.healthairport.faceplate.avro.Calendar.Builder value) {
+    public com.dycn.airportconsumer.faceplate.avro.Policy.Builder setCalendarBuilder(com.dycn.airportconsumer.faceplate.avro.Calendar.Builder value) {
       clearCalendar();
       calendarBuilder = value;
       return this;
@@ -289,7 +289,7 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'calendar' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Policy.Builder clearCalendar() {
+    public com.dycn.airportconsumer.faceplate.avro.Policy.Builder clearCalendar() {
       calendar = null;
       calendarBuilder = null;
       fieldSetFlags()[0] = false;
@@ -300,7 +300,7 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
       * Gets the value of the 'passTime' field.
       * @return The value.
       */
-    public java.util.List<com.dycn.healthairport.faceplate.avro.TimeSpan> getPassTime() {
+    public java.util.List<com.dycn.airportconsumer.faceplate.avro.TimeSpan> getPassTime() {
       return passTime;
     }
 
@@ -309,7 +309,7 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'passTime'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Policy.Builder setPassTime(java.util.List<com.dycn.healthairport.faceplate.avro.TimeSpan> value) {
+    public com.dycn.airportconsumer.faceplate.avro.Policy.Builder setPassTime(java.util.List<com.dycn.airportconsumer.faceplate.avro.TimeSpan> value) {
       validate(fields()[1], value);
       this.passTime = value;
       fieldSetFlags()[1] = true;
@@ -329,7 +329,7 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'passTime' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Policy.Builder clearPassTime() {
+    public com.dycn.airportconsumer.faceplate.avro.Policy.Builder clearPassTime() {
       passTime = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -348,7 +348,7 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'passQuota'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Policy.Builder setPassQuota(int value) {
+    public com.dycn.airportconsumer.faceplate.avro.Policy.Builder setPassQuota(int value) {
       validate(fields()[2], value);
       this.passQuota = value;
       fieldSetFlags()[2] = true;
@@ -368,7 +368,7 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'passQuota' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Policy.Builder clearPassQuota() {
+    public com.dycn.airportconsumer.faceplate.avro.Policy.Builder clearPassQuota() {
       fieldSetFlags()[2] = false;
       return this;
     }
@@ -386,7 +386,7 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'validTimestamp'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Policy.Builder setValidTimestamp(long value) {
+    public com.dycn.airportconsumer.faceplate.avro.Policy.Builder setValidTimestamp(long value) {
       validate(fields()[3], value);
       this.validTimestamp = value;
       fieldSetFlags()[3] = true;
@@ -406,7 +406,7 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'validTimestamp' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Policy.Builder clearValidTimestamp() {
+    public com.dycn.airportconsumer.faceplate.avro.Policy.Builder clearValidTimestamp() {
       fieldSetFlags()[3] = false;
       return this;
     }
@@ -418,9 +418,9 @@ public class Policy extends org.apache.avro.specific.SpecificRecordBase implemen
         if (calendarBuilder != null) {
           record.calendar = this.calendarBuilder.build();
         } else {
-          record.calendar = fieldSetFlags()[0] ? this.calendar : (com.dycn.healthairport.faceplate.avro.Calendar) defaultValue(fields()[0]);
+          record.calendar = fieldSetFlags()[0] ? this.calendar : (com.dycn.airportconsumer.faceplate.avro.Calendar) defaultValue(fields()[0]);
         }
-        record.passTime = fieldSetFlags()[1] ? this.passTime : (java.util.List<com.dycn.healthairport.faceplate.avro.TimeSpan>) defaultValue(fields()[1]);
+        record.passTime = fieldSetFlags()[1] ? this.passTime : (java.util.List<com.dycn.airportconsumer.faceplate.avro.TimeSpan>) defaultValue(fields()[1]);
         record.passQuota = fieldSetFlags()[2] ? this.passQuota : (Integer) defaultValue(fields()[2]);
         record.validTimestamp = fieldSetFlags()[3] ? this.validTimestamp : (Long) defaultValue(fields()[3]);
         return record;

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dycn.airportconsumer.mapper.AirportWorkerMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dycn.airportconsumer.entity.AirportWorker">
+        <id column="id" property="id"/>
+        <result column="p_dept" property="parentDept"/>
+        <result column="dept" property="dept"/>
+        <result column="work_dept" property="workDept"/>
+        <result column="name" property="name"/>
+        <result column="on_job" property="onJob"/>
+        <result column="id_card" property="idCard"/>
+        <result column="id_type" property="idType"/>
+        <result column="address" property="address"/>
+        <result column="local_address" property="localAddress"/>
+        <result column="phone" property="phone"/>
+        <result column="job_name" property="jobName"/>
+        <result column="testing_frequency" property="testingFrequency"/>
+        <result column="risk_level" property="riskLevel"/>
+        <result column="test_count" property="testCount"/>
+        <result column="is_testing" property="isTesting"/>
+        <result column="last_test_time" property="lastTestTime"/>
+        <result column="is_vaccination" property="isVaccination"/>
+        <result column="last_vaccination_time" property="lastVaccinationTime"/>
+        <result column="next_test_time" property="nextTestTime"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="deleted" property="deleted"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, p_dept, dept, work_dept, name, on_job, id_card, id_type, address, local_address, phone, job_name, testing_frequency, risk_level, test_count, is_testing, last_test_time, is_vaccination, last_vaccination_time, next_test_time, create_time, update_time, deleted
+    </sql>
+
+</mapper>

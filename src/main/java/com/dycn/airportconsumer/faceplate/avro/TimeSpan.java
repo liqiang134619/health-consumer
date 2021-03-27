@@ -11,7 +11,7 @@ import org.apache.avro.specific.SpecificData;
 @org.apache.avro.specific.AvroGenerated
 public class TimeSpan extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = 6689333652555137590L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TimeSpan\",\"namespace\":\"com.dycn.healthairport.faceplate.avro\",\"fields\":[{\"name\":\"startSeconds\",\"type\":\"int\"},{\"name\":\"span\",\"type\":\"int\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TimeSpan\",\"namespace\":\"com.dycn.airportconsumer.faceplate.avro\",\"fields\":[{\"name\":\"startSeconds\",\"type\":\"int\"},{\"name\":\"span\",\"type\":\"int\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public int startSeconds;
   @Deprecated public int span;
@@ -89,8 +89,8 @@ public class TimeSpan extends org.apache.avro.specific.SpecificRecordBase implem
    * Creates a new TimeSpan RecordBuilder.
    * @return A new TimeSpan RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.TimeSpan.Builder newBuilder() {
-    return new com.dycn.healthairport.faceplate.avro.TimeSpan.Builder();
+  public static com.dycn.airportconsumer.faceplate.avro.TimeSpan.Builder newBuilder() {
+    return new com.dycn.airportconsumer.faceplate.avro.TimeSpan.Builder();
   }
 
   /**
@@ -98,8 +98,8 @@ public class TimeSpan extends org.apache.avro.specific.SpecificRecordBase implem
    * @param other The existing builder to copy.
    * @return A new TimeSpan RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.TimeSpan.Builder newBuilder(com.dycn.healthairport.faceplate.avro.TimeSpan.Builder other) {
-    return new com.dycn.healthairport.faceplate.avro.TimeSpan.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.TimeSpan.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.TimeSpan.Builder other) {
+    return new com.dycn.airportconsumer.faceplate.avro.TimeSpan.Builder(other);
   }
 
   /**
@@ -107,8 +107,8 @@ public class TimeSpan extends org.apache.avro.specific.SpecificRecordBase implem
    * @param other The existing instance to copy.
    * @return A new TimeSpan RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.TimeSpan.Builder newBuilder(com.dycn.healthairport.faceplate.avro.TimeSpan other) {
-    return new com.dycn.healthairport.faceplate.avro.TimeSpan.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.TimeSpan.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.TimeSpan other) {
+    return new com.dycn.airportconsumer.faceplate.avro.TimeSpan.Builder(other);
   }
 
   /**
@@ -129,7 +129,7 @@ public class TimeSpan extends org.apache.avro.specific.SpecificRecordBase implem
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.TimeSpan.Builder other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.TimeSpan.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.startSeconds)) {
         this.startSeconds = data().deepCopy(fields()[0].schema(), other.startSeconds);
@@ -145,7 +145,7 @@ public class TimeSpan extends org.apache.avro.specific.SpecificRecordBase implem
      * Creates a Builder by copying an existing TimeSpan instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.TimeSpan other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.TimeSpan other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.startSeconds)) {
         this.startSeconds = data().deepCopy(fields()[0].schema(), other.startSeconds);
@@ -170,7 +170,7 @@ public class TimeSpan extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'startSeconds'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.TimeSpan.Builder setStartSeconds(int value) {
+    public com.dycn.airportconsumer.faceplate.avro.TimeSpan.Builder setStartSeconds(int value) {
       validate(fields()[0], value);
       this.startSeconds = value;
       fieldSetFlags()[0] = true;
@@ -190,7 +190,7 @@ public class TimeSpan extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'startSeconds' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.TimeSpan.Builder clearStartSeconds() {
+    public com.dycn.airportconsumer.faceplate.avro.TimeSpan.Builder clearStartSeconds() {
       fieldSetFlags()[0] = false;
       return this;
     }
@@ -208,7 +208,7 @@ public class TimeSpan extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'span'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.TimeSpan.Builder setSpan(int value) {
+    public com.dycn.airportconsumer.faceplate.avro.TimeSpan.Builder setSpan(int value) {
       validate(fields()[1], value);
       this.span = value;
       fieldSetFlags()[1] = true;
@@ -228,7 +228,7 @@ public class TimeSpan extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'span' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.TimeSpan.Builder clearSpan() {
+    public com.dycn.airportconsumer.faceplate.avro.TimeSpan.Builder clearSpan() {
       fieldSetFlags()[1] = false;
       return this;
     }

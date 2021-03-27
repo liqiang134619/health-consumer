@@ -1,6 +1,6 @@
 package com.dycn.airportconsumer.faceplate;
 
-import com.dycn.healthairport.faceplate.common.HttpDefine;
+import com.dycn.airportconsumer.faceplate.common.HttpDefine;
 import io.netty.buffer.ByteBuf;
 import io.netty.handler.codec.http.HttpHeaderNames;
 import io.netty.handler.codec.http.HttpMethod;

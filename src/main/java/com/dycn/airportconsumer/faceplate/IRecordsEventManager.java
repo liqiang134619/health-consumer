@@ -1,7 +1,7 @@
 package com.dycn.airportconsumer.faceplate;
 
-import com.dycn.healthairport.faceplate.common.ConnectionStatus;
-import com.dycn.healthairport.faceplate.common.HttpEventType;
+import com.dycn.airportconsumer.faceplate.common.ConnectionStatus;
+import com.dycn.airportconsumer.faceplate.common.HttpEventType;
 import org.apache.avro.specific.SpecificRecord;
 
 /**

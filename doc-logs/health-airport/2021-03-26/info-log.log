@@ -1,0 +1,751 @@
+2021-03-26 23:46:31.311 [main] INFO  com.dycn.airportconsumer.AirportConsumerApplication - Starting AirportConsumerApplication on liqiangdeMacBook-Pro.local with PID 63068 (/Users/liq/javaprojet/health-consumer/target/classes started by liq in /Users/liq/javaprojet/health-consumer)
+2021-03-26 23:46:31.314 [main] INFO  com.dycn.airportconsumer.AirportConsumerApplication - No active profile set, falling back to default profiles: default
+2021-03-26 23:46:32.355 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-03-26 23:46:32.363 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-03-26 23:46:32.364 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-26 23:46:32.364 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-03-26 23:46:32.443 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-26 23:46:32.443 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1090 ms
+2021-03-26 23:46:33.007 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-26 23:46:33.419 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2021-03-26 23:46:33.447 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2021-03-26 23:46:33.449 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [10.138.25.20:5672]
+2021-03-26 23:46:33.530 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#6a1568d6:0/SimpleConnection@25a5c8e [delegate=amqp://admin@10.138.25.20:5672/, localPort= 52542]
+2021-03-26 23:48:11.728 [main] INFO  com.dycn.airportconsumer.AirportConsumerApplication - Starting AirportConsumerApplication on liqiangdeMacBook-Pro.local with PID 63150 (/Users/liq/javaprojet/health-consumer/target/classes started by liq in /Users/liq/javaprojet/health-consumer)
+2021-03-26 23:48:11.730 [main] INFO  com.dycn.airportconsumer.AirportConsumerApplication - No active profile set, falling back to default profiles: default
+2021-03-26 23:48:12.686 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-03-26 23:48:12.694 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-03-26 23:48:12.695 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-26 23:48:12.695 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-03-26 23:48:12.768 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-26 23:48:12.768 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 992 ms
+2021-03-26 23:48:13.315 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-26 23:48:13.697 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2021-03-26 23:48:13.722 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2021-03-26 23:48:13.724 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [10.138.25.20:5672]
+2021-03-26 23:48:13.811 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#1f15e689:0/SimpleConnection@1b8aaeab [delegate=amqp://admin@10.138.25.20:5672/, localPort= 53308]
+2021-03-26 23:48:13.998 [main] INFO  com.dycn.airportconsumer.AirportConsumerApplication - Started AirportConsumerApplication in 2.827 seconds (JVM running for 3.372)
+2021-03-26 23:48:31.207 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2021-03-26 23:48:31.487 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2021-03-26 23:48:51.168 [SpringContextShutdownHook] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2021-03-26 23:48:51.200 [SpringContextShutdownHook] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2021-03-26 23:48:52.397 [SpringContextShutdownHook] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2021-03-26 23:48:52.420 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-26 23:48:52.421 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Shutdown initiated...
+2021-03-26 23:48:52.460 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Shutdown completed.
+2021-03-26 23:49:49.237 [main] INFO  com.dycn.airportconsumer.AirportConsumerApplication - Starting AirportConsumerApplication on liqiangdeMacBook-Pro.local with PID 63218 (/Users/liq/javaprojet/health-consumer/target/classes started by liq in /Users/liq/javaprojet/health-consumer)
+2021-03-26 23:49:49.240 [main] INFO  com.dycn.airportconsumer.AirportConsumerApplication - No active profile set, falling back to default profiles: default
+2021-03-26 23:49:50.215 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-03-26 23:49:50.223 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-03-26 23:49:50.224 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-26 23:49:50.224 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-03-26 23:49:50.291 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-26 23:49:50.291 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1013 ms
+2021-03-26 23:49:50.878 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-26 23:49:51.262 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2021-03-26 23:49:51.290 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2021-03-26 23:49:51.292 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [10.138.25.20:5672]
+2021-03-26 23:49:51.382 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#11c88cca:0/SimpleConnection@656c5c3 [delegate=amqp://admin@10.138.25.20:5672/, localPort= 54076]
+2021-03-26 23:49:51.563 [main] INFO  com.dycn.airportconsumer.AirportConsumerApplication - Started AirportConsumerApplication in 2.866 seconds (JVM running for 3.401)
+2021-03-26 23:49:51.581 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
+2021-03-26 23:49:51.843 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Start completed.
+2021-03-26 23:49:52.102 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@63d82a2b
+2021-03-26 23:49:52.214 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.82：8443】
+2021-03-26 23:49:52.285 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:52.375 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:52.395 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:52.397 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:52.411 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:52.803 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@4a0fc0cc
+2021-03-26 23:49:52.813 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.81：8443】
+2021-03-26 23:49:52.816 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:52.919 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:52.934 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:52.935 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:52.952 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:53.077 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@8e56ee3
+2021-03-26 23:49:53.090 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.36：8443】
+2021-03-26 23:49:53.091 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:53.191 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:53.208 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:53.209 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:53.229 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:53.360 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@3edf36ee
+2021-03-26 23:49:53.370 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.52：8443】
+2021-03-26 23:49:53.373 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:53.488 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:53.502 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:53.502 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:53.519 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:53.658 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@727fc415
+2021-03-26 23:49:53.670 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.49：8443】
+2021-03-26 23:49:53.673 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:53.770 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:53.785 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:53.786 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:53.805 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:53.845 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:49:53.856 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.52, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:49:53.927 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@2cf66c50
+2021-03-26 23:49:53.941 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.66：8443】
+2021-03-26 23:49:53.942 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:54.062 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:54.078 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:54.078 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:54.088 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:49:54.098 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:54.099 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.49, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:49:54.230 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@200978ce
+2021-03-26 23:49:54.243 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.38：8443】
+2021-03-26 23:49:54.245 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:54.342 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:54.357 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:54.358 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:54.377 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:54.525 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@602430e6
+2021-03-26 23:49:54.539 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.35：8443】
+2021-03-26 23:49:54.540 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:54.641 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:54.656 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:54.656 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:54.676 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:54.807 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@6b1efcd6
+2021-03-26 23:49:54.819 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.26：8443】
+2021-03-26 23:49:54.821 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:54.953 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:54.969 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:54.970 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:54.991 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:55.117 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@24a93a3e
+2021-03-26 23:49:55.131 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.17：8443】
+2021-03-26 23:49:55.133 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:55.240 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:55.255 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:55.255 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:55.276 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:55.406 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@b9b47c5
+2021-03-26 23:49:55.422 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.23：8443】
+2021-03-26 23:49:55.425 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:55.534 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:55.552 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:55.552 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:55.571 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:55.712 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@742531d4
+2021-03-26 23:49:55.724 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.18：8443】
+2021-03-26 23:49:55.725 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:55.858 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:55.872 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:55.873 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:55.892 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:56.028 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@68151fe9
+2021-03-26 23:49:56.041 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.20：8443】
+2021-03-26 23:49:56.043 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:56.163 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:56.179 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:56.179 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:56.199 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:56.345 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@28975c78
+2021-03-26 23:49:56.358 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.21：8443】
+2021-03-26 23:49:56.360 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:56.482 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:56.496 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:56.496 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:56.516 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:56.645 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@7c14ed5a
+2021-03-26 23:49:56.657 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.22：8443】
+2021-03-26 23:49:56.660 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:56.767 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:56.781 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:56.781 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:56.802 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:56.937 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@3b9cbdc8
+2021-03-26 23:49:56.950 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.19：8443】
+2021-03-26 23:49:56.951 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:57.080 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:57.099 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:57.099 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:57.119 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:57.250 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@684aad4a
+2021-03-26 23:49:57.262 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.1：8443】
+2021-03-26 23:49:57.263 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:57.365 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:57.381 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:57.381 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:57.402 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:57.533 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@3395ca2d
+2021-03-26 23:49:57.547 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.2：8443】
+2021-03-26 23:49:57.548 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:57.765 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:57.779 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:57.780 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:57.800 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:57.942 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@23d288c
+2021-03-26 23:49:57.955 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.3：8443】
+2021-03-26 23:49:57.956 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:58.050 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:58.075 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:58.076 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:58.096 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:58.235 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@f8e4b8c
+2021-03-26 23:49:58.246 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.25：8443】
+2021-03-26 23:49:58.247 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:58.348 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:58.363 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:58.364 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:58.384 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:58.534 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@50e92eb1
+2021-03-26 23:49:58.546 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.24：8443】
+2021-03-26 23:49:58.547 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:58.653 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:58.671 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:58.671 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:58.692 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:58.872 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@5beac8ef
+2021-03-26 23:49:58.885 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.50：8443】
+2021-03-26 23:49:58.886 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:58.991 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:59.003 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:59.004 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:59.023 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:59.212 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@6ce9896a
+2021-03-26 23:49:59.225 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.51：8443】
+2021-03-26 23:49:59.226 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:59.332 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:59.348 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:59.348 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:59.368 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:59.525 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@3d45da1a
+2021-03-26 23:49:59.539 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.6：8443】
+2021-03-26 23:49:59.540 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:59.666 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:49:59.698 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:49:59.699 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:49:59.717 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:49:59.884 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@649f0157
+2021-03-26 23:49:59.895 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.65：8443】
+2021-03-26 23:49:59.896 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:49:59.996 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:50:00.012 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:50:00.012 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:50:00.033 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:50:00.176 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@36ec2602
+2021-03-26 23:50:00.187 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.7：8443】
+2021-03-26 23:50:00.189 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:50:00.294 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:50:00.308 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:50:00.309 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:50:00.328 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:50:00.462 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@2c80f514
+2021-03-26 23:50:00.474 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.56：8443】
+2021-03-26 23:50:00.475 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:50:00.585 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:50:00.600 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:50:00.601 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:50:00.626 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:50:00.800 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@4bed1867
+2021-03-26 23:50:00.813 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.5：8443】
+2021-03-26 23:50:00.814 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:50:00.936 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:50:00.974 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:50:00.974 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:50:00.994 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:50:01.136 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@240adefc
+2021-03-26 23:50:01.146 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.61：8443】
+2021-03-26 23:50:01.148 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:50:01.244 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:50:01.258 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:50:01.259 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:50:01.280 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:50:01.466 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@263c0046
+2021-03-26 23:50:01.477 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.42：8443】
+2021-03-26 23:50:01.477 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:50:01.615 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:50:01.630 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:50:01.630 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:50:01.651 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:50:01.818 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@450b4235
+2021-03-26 23:50:01.830 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.181.13.116：8443】
+2021-03-26 23:50:01.831 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:50:01.968 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:50:01.985 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:50:01.985 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:50:02.007 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:50:02.184 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@2cafc1b
+2021-03-26 23:50:02.196 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.45：8443】
+2021-03-26 23:50:02.197 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:50:02.327 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:50:02.344 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:50:02.344 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:50:02.371 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:50:02.582 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@30db777c
+2021-03-26 23:50:02.594 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.84：8443】
+2021-03-26 23:50:02.595 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:50:02.699 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:50:02.713 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:50:02.714 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:50:02.735 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:50:02.895 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@4ef0ecec
+2021-03-26 23:50:02.906 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.37：8443】
+2021-03-26 23:50:02.907 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:50:03.035 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:50:03.054 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:50:03.055 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:50:03.068 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:50:03.077 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:50:03.079 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.84, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:50:03.226 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@6d15e85b
+2021-03-26 23:50:03.239 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.85：8443】
+2021-03-26 23:50:03.240 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:50:03.321 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:50:03.334 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:50:03.335 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:50:03.354 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:50:03.503 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@3d1f00e4
+2021-03-26 23:50:03.516 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.27：8443】
+2021-03-26 23:50:03.517 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:50:03.607 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:50:03.637 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:50:03.638 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:50:03.658 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:50:03.813 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@46c71699
+2021-03-26 23:50:03.824 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.83：8443】
+2021-03-26 23:50:03.825 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:50:03.951 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:50:03.969 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:50:03.970 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:50:03.991 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:50:11.908 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:50:11.920 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.65, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:50:12.211 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:50:12.222 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.7, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:50:19.193 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:50:19.204 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.23, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:50:23.013 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:50:23.029 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.51, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:50:23.327 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:50:23.340 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.6, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:50:27.405 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:50:27.417 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.83, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:51:01.642 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:51:01.644 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.17, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:51:06.632 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:51:06.643 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.51, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:52:33.916 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.920 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.917 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.921 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.918 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.920 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.920 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.922 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.922 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.922 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.922 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.923 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.923 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.923 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.923 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.924 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.944 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.945 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.946 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.947 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.947 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.948 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.948 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.948 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.949 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.949 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.950 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.950 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.951 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.952 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.952 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.949 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.953 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.953 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.954 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.954 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.950 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.955 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.955 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.956 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.953 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.957 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.957 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.955 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.953 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.958 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.959 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.960 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.961 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.962 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.962 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.962 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.963 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.964 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.964 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.964 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.964 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.964 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.957 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - stopAllThread, mAccessRecordExecutor null
+2021-03-26 23:52:33.954 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.962 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.965 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.965 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.955 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.966 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.974 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.966 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.975 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.976 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.975 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.975 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.977 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.982 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:52:33.984 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslCloseCompletionEvent(java.nio.channels.ClosedChannelException)
+2021-03-26 23:53:04.023 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@352068f8
+2021-03-26 23:53:04.032 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.81：8443】
+2021-03-26 23:53:04.033 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:04.138 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:04.154 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:04.154 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:04.173 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:04.301 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@176c947c
+2021-03-26 23:53:04.313 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.36：8443】
+2021-03-26 23:53:04.314 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:04.433 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:04.449 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:04.449 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:04.471 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:04.608 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@7c2b3d6e
+2021-03-26 23:53:04.620 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.52：8443】
+2021-03-26 23:53:04.620 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:04.731 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:04.744 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:04.744 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:04.766 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:04.885 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@3c03a76f
+2021-03-26 23:53:04.896 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.49：8443】
+2021-03-26 23:53:04.897 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:04.988 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:05.001 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:05.002 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:05.019 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:05.156 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@13fcc52d
+2021-03-26 23:53:05.168 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.66：8443】
+2021-03-26 23:53:05.169 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:05.315 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:05.338 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:05.338 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:05.364 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:05.496 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@2d2c7f3f
+2021-03-26 23:53:05.508 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.38：8443】
+2021-03-26 23:53:05.509 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:05.667 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:05.687 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:05.688 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:05.708 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:05.835 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@42bf038e
+2021-03-26 23:53:05.847 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.35：8443】
+2021-03-26 23:53:05.848 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:05.954 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:05.967 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:05.967 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:06.025 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:06.242 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@656b201c
+2021-03-26 23:53:06.253 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.26：8443】
+2021-03-26 23:53:06.254 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:06.387 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:06.404 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:06.404 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:06.430 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:06.663 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@621aa651
+2021-03-26 23:53:06.676 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.17：8443】
+2021-03-26 23:53:06.677 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:06.790 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:06.807 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:06.807 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:06.829 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:07.015 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@f2727bd
+2021-03-26 23:53:07.027 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.23：8443】
+2021-03-26 23:53:07.028 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:07.132 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:07.148 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:07.148 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:07.170 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:07.353 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@4e3c6fb0
+2021-03-26 23:53:07.364 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.18：8443】
+2021-03-26 23:53:07.365 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:07.453 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:07.466 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:07.466 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:07.487 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:07.680 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@617970ae
+2021-03-26 23:53:07.691 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.20：8443】
+2021-03-26 23:53:07.692 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:07.795 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:07.858 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:07.858 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:07.879 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:08.074 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@475b5e0b
+2021-03-26 23:53:08.086 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.21：8443】
+2021-03-26 23:53:08.086 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:08.186 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:08.201 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:08.201 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:08.221 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:08.415 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@59fc0071
+2021-03-26 23:53:08.427 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.22：8443】
+2021-03-26 23:53:08.429 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:08.534 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:08.553 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:08.553 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:08.574 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:08.754 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@7dd2ea8d
+2021-03-26 23:53:08.769 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.19：8443】
+2021-03-26 23:53:08.770 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:08.868 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:08.880 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:08.881 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:08.900 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:09.095 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@2737270b
+2021-03-26 23:53:09.106 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.1：8443】
+2021-03-26 23:53:09.107 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:09.206 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:09.222 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:09.222 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:09.241 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:09.425 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@7fe8269d
+2021-03-26 23:53:09.436 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.2：8443】
+2021-03-26 23:53:09.437 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:09.521 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:09.534 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:09.534 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:09.559 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:09.775 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@12edc334
+2021-03-26 23:53:09.787 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.3：8443】
+2021-03-26 23:53:09.789 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:09.928 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:09.946 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:09.946 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:09.966 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:10.181 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@17bc1705
+2021-03-26 23:53:10.191 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.25：8443】
+2021-03-26 23:53:10.192 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:10.338 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:10.354 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:10.354 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:10.373 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:10.561 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@39cb12f0
+2021-03-26 23:53:10.572 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.24：8443】
+2021-03-26 23:53:10.573 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:10.679 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:10.692 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:10.692 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:10.715 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:10.896 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@58fc7f72
+2021-03-26 23:53:10.908 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.50：8443】
+2021-03-26 23:53:10.909 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:10.991 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:11.003 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:11.004 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:11.027 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:11.204 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@1312a69e
+2021-03-26 23:53:11.216 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.51：8443】
+2021-03-26 23:53:11.216 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:11.345 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:53:11.356 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.50, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:53:11.373 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:11.388 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:11.388 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:11.410 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:11.592 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@598a1a71
+2021-03-26 23:53:11.604 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.6：8443】
+2021-03-26 23:53:11.605 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:11.684 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:11.697 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:11.698 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:11.719 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:11.896 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@20d9f499
+2021-03-26 23:53:11.909 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.65：8443】
+2021-03-26 23:53:11.910 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:12.023 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:12.040 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:12.041 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:12.062 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:12.287 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@e3f2e1d
+2021-03-26 23:53:12.296 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.7：8443】
+2021-03-26 23:53:12.298 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:12.412 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:12.437 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:12.437 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:12.458 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:12.672 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@778580a9
+2021-03-26 23:53:12.685 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.56：8443】
+2021-03-26 23:53:12.686 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:12.801 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:12.816 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:12.816 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:12.837 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:13.023 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@74c2fead
+2021-03-26 23:53:13.034 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.5：8443】
+2021-03-26 23:53:13.036 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:13.189 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:13.203 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:13.204 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:13.224 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:13.443 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@44e5f255
+2021-03-26 23:53:13.455 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.61：8443】
+2021-03-26 23:53:13.456 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:13.564 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:13.580 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:13.580 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:13.601 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:13.822 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@72fd4e0d
+2021-03-26 23:53:13.836 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.42：8443】
+2021-03-26 23:53:13.837 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:13.966 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:13.979 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:13.979 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:13.997 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:14.190 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@55909451
+2021-03-26 23:53:14.201 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.181.13.116：8443】
+2021-03-26 23:53:14.202 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:14.304 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:14.322 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:14.323 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:14.344 [nioEventLoopGroup-3-3] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:14.523 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@302d2ec
+2021-03-26 23:53:14.532 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.45：8443】
+2021-03-26 23:53:14.533 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:14.656 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:14.673 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:14.673 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:14.696 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:14.885 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@1699ce7b
+2021-03-26 23:53:14.897 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.84：8443】
+2021-03-26 23:53:14.898 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:15.024 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:15.041 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:15.041 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:15.063 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:15.254 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@1dbdc1b7
+2021-03-26 23:53:15.265 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.37：8443】
+2021-03-26 23:53:15.266 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:15.357 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:15.373 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:15.373 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:15.392 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:15.398 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:53:15.409 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.84, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:53:15.593 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@5d48e2c5
+2021-03-26 23:53:15.605 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.85：8443】
+2021-03-26 23:53:15.607 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:15.710 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:15.725 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:15.725 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:15.747 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:15.933 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@e65e354
+2021-03-26 23:53:15.943 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.27：8443】
+2021-03-26 23:53:15.944 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:16.041 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:16.055 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:16.055 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:16.077 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:53:16.261 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@660cfc17
+2021-03-26 23:53:16.272 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.83：8443】
+2021-03-26 23:53:16.273 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:53:16.387 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:53:16.403 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:53:16.404 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:53:16.423 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:54:04.489 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler -  创建了一个新的[ Http2ClientHandler ] Http2ClientHandler: com.dycn.airportconsumer.faceplate.Http2ClientHandler@4066500d
+2021-03-26 23:54:04.501 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dycn.airportconsumer.faceplate.HttpConnection - 【==>netty client Connected to 10.31.255.82：8443】
+2021-03-26 23:54:04.501 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_ISSUED
+2021-03-26 23:54:04.644 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: SslHandshakeCompletionEvent(SUCCESS)
+2021-03-26 23:54:04.659 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: io.netty.handler.codec.http2.Http2ConnectionPrefaceAndSettingsFrameWrittenEvent@720d3195
+2021-03-26 23:54:04.659 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientInitializer - User Event Triggered: UPGRADE_SUCCESSFUL
+2021-03-26 23:54:04.681 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - received settings ack
+2021-03-26 23:54:09.003 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:54:09.020 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.18, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:54:20.999 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:54:21.018 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.36, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:54:47.397 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:54:47.407 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.27, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:55:00.354 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:55:00.364 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.81, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:55:04.168 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:55:04.169 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.20, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:55:55.273 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:55:55.275 [nioEventLoopGroup-3-7] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.3, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:55:59.527 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:55:59.538 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.45, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:56:00.177 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:56:00.178 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.37, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:56:05.187 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:56:05.202 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.18, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:56:10.067 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:56:10.079 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.56, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:56:12.565 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:56:12.594 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.37, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:56:24.395 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:56:24.396 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.84, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:56:24.735 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:56:24.735 [nioEventLoopGroup-3-6] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.37, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:56:27.650 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:56:27.662 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.66, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:56:28.938 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:56:28.950 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.17, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:56:29.590 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:56:29.599 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.18, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:56:48.883 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:56:48.884 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.45, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:56:49.204 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:56:49.205 [nioEventLoopGroup-3-5] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.84, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:57:18.187 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:57:18.197 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.17, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:57:24.480 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:57:24.491 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.61, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:57:35.560 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:57:35.560 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.7, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:57:36.205 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:57:36.216 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.5, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:57:36.537 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:57:36.549 [nioEventLoopGroup-3-1] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.61, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:58:12.638 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:58:12.651 [nioEventLoopGroup-3-2] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.42, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:58:16.247 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:58:16.258 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.52, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:58:23.030 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:58:23.031 [nioEventLoopGroup-3-13] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.65, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:58:50.881 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:58:50.893 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.27, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:58:51.184 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:58:51.196 [nioEventLoopGroup-3-9] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.83, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:59:24.052 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:59:24.062 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.56, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:59:24.392 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:59:24.403 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.5, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:59:28.551 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:59:28.562 [nioEventLoopGroup-3-8] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.52, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:59:29.171 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:59:29.172 [nioEventLoopGroup-3-10] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.66, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:59:29.499 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:59:29.499 [nioEventLoopGroup-3-11] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.38, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:59:35.733 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:59:35.734 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.7, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:59:36.066 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:59:36.067 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.56, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:59:36.398 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:59:36.409 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.5, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:59:41.952 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:59:41.965 [nioEventLoopGroup-3-12] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.35, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:59:43.223 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:59:43.233 [nioEventLoopGroup-3-16] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.18, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:59:47.865 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:59:47.878 [nioEventLoopGroup-3-14] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.7, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:59:48.176 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:59:48.190 [nioEventLoopGroup-3-15] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.56, response: [{"message": "last transaction is processing..."}]
+2021-03-26 23:59:49.763 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - unsubscribeEvent：PERSONS
+2021-03-26 23:59:49.774 [nioEventLoopGroup-3-4] INFO  com.dycn.airportconsumer.faceplate.Http2ClientHandler - [ Receive Data Frame 208] host: 10.31.255.45, response: [{"message": "last transaction is processing..."}]

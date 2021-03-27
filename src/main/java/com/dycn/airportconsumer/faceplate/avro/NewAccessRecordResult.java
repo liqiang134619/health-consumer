@@ -11,9 +11,9 @@ import org.apache.avro.specific.SpecificData;
 @org.apache.avro.specific.AvroGenerated
 public class NewAccessRecordResult extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = 7239069619150332260L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NewAccessRecordResult\",\"namespace\":\"com.dycn.healthairport.faceplate.avro\",\"fields\":[{\"name\":\"accessRecord\",\"type\":{\"type\":\"record\",\"name\":\"NewAccessRecord\",\"fields\":[{\"name\":\"devId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"设备id\"},{\"name\":\"timestamp\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"过人日志时间戳\"},{\"name\":\"personId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"人像id\"},{\"name\":\"featureIndex\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"featureMd5\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"人像的特征值的md5 hash值\"},{\"name\":\"similarity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"人像比对的相似度\"},{\"name\":\"imagesList\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"NewImageStruct\",\"fields\":[{\"name\":\"imageType\",\"type\":{\"type\":\"enum\",\"name\":\"NewImageType\",\"symbols\":[\"SCENE_IMAGE\",\"CAPTURED_IMAGE\",\"INFRARED_SCENE_IMAGE\",\"INFRARED_CAPTURED_IMAGE\"]}},{\"name\":\"image\",\"type\":[\"null\",\"bytes\"]}]}},\"doc\":\"捕获的人像图,包括捕获图,场景图,红外捕获图,红外场景图\"},{\"name\":\"featuresList\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"NewFaceFeatureStruct\",\"fields\":[{\"name\":\"featureType\",\"type\":{\"type\":\"enum\",\"name\":\"NewFeatureType\",\"symbols\":[\"RGB_FEATURE\",\"INFRARED_FEATURE\"]}},{\"name\":\"faceFeature\",\"type\":[\"null\",\"bytes\"]}]}},\"doc\":\"人像的特征值,接口返回该值为null\"},{\"name\":\"cardNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"卡号\"},{\"name\":\"passed\",\"type\":[{\"type\":\"record\",\"name\":\"NewAccessGranted\",\"fields\":[]},{\"type\":\"record\",\"name\":\"NewAccessDenied\",\"fields\":[]}]},{\"name\":\"password\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"密码\",\"default\":\"\"},{\"name\":\"verificationType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"过人比对方式，基本方式有：刷脸、刷卡、QR、密码、刷卡刷脸、刷脸密码、刷脸刷卡\",\"default\":\"\"},{\"name\":\"QRCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":\"\"}]}},{\"name\":\"checkpoint\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"每一条过人日志的唯一id\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NewAccessRecordResult\",\"namespace\":\"com.dycn.airportconsumer.faceplate.avro\",\"fields\":[{\"name\":\"accessRecord\",\"type\":{\"type\":\"record\",\"name\":\"NewAccessRecord\",\"fields\":[{\"name\":\"devId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"设备id\"},{\"name\":\"timestamp\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"过人日志时间戳\"},{\"name\":\"personId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"人像id\"},{\"name\":\"featureIndex\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"featureMd5\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"人像的特征值的md5 hash值\"},{\"name\":\"similarity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"人像比对的相似度\"},{\"name\":\"imagesList\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"NewImageStruct\",\"fields\":[{\"name\":\"imageType\",\"type\":{\"type\":\"enum\",\"name\":\"NewImageType\",\"symbols\":[\"SCENE_IMAGE\",\"CAPTURED_IMAGE\",\"INFRARED_SCENE_IMAGE\",\"INFRARED_CAPTURED_IMAGE\"]}},{\"name\":\"image\",\"type\":[\"null\",\"bytes\"]}]}},\"doc\":\"捕获的人像图,包括捕获图,场景图,红外捕获图,红外场景图\"},{\"name\":\"featuresList\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"NewFaceFeatureStruct\",\"fields\":[{\"name\":\"featureType\",\"type\":{\"type\":\"enum\",\"name\":\"NewFeatureType\",\"symbols\":[\"RGB_FEATURE\",\"INFRARED_FEATURE\"]}},{\"name\":\"faceFeature\",\"type\":[\"null\",\"bytes\"]}]}},\"doc\":\"人像的特征值,接口返回该值为null\"},{\"name\":\"cardNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"卡号\"},{\"name\":\"passed\",\"type\":[{\"type\":\"record\",\"name\":\"NewAccessGranted\",\"fields\":[]},{\"type\":\"record\",\"name\":\"NewAccessDenied\",\"fields\":[]}]},{\"name\":\"password\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"密码\",\"default\":\"\"},{\"name\":\"verificationType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"过人比对方式，基本方式有：刷脸、刷卡、QR、密码、刷卡刷脸、刷脸密码、刷脸刷卡\",\"default\":\"\"},{\"name\":\"QRCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":\"\"}]}},{\"name\":\"checkpoint\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"每一条过人日志的唯一id\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
-  @Deprecated public com.dycn.healthairport.faceplate.avro.NewAccessRecord accessRecord;
+  @Deprecated public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord accessRecord;
   /** 每一条过人日志的唯一id */
   @Deprecated public String checkpoint;
 
@@ -29,7 +29,7 @@ public class NewAccessRecordResult extends org.apache.avro.specific.SpecificReco
    * @param accessRecord The new value for accessRecord
    * @param checkpoint 每一条过人日志的唯一id
    */
-  public NewAccessRecordResult(com.dycn.healthairport.faceplate.avro.NewAccessRecord accessRecord, String checkpoint) {
+  public NewAccessRecordResult(com.dycn.airportconsumer.faceplate.avro.NewAccessRecord accessRecord, String checkpoint) {
     this.accessRecord = accessRecord;
     this.checkpoint = checkpoint;
   }
@@ -48,7 +48,7 @@ public class NewAccessRecordResult extends org.apache.avro.specific.SpecificReco
   @SuppressWarnings(value="unchecked")
   public void put(int field$, Object value$) {
     switch (field$) {
-    case 0: accessRecord = (com.dycn.healthairport.faceplate.avro.NewAccessRecord)value$; break;
+    case 0: accessRecord = (com.dycn.airportconsumer.faceplate.avro.NewAccessRecord)value$; break;
     case 1: checkpoint = (String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
@@ -58,7 +58,7 @@ public class NewAccessRecordResult extends org.apache.avro.specific.SpecificReco
    * Gets the value of the 'accessRecord' field.
    * @return The value of the 'accessRecord' field.
    */
-  public com.dycn.healthairport.faceplate.avro.NewAccessRecord getAccessRecord() {
+  public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord getAccessRecord() {
     return accessRecord;
   }
 
@@ -66,7 +66,7 @@ public class NewAccessRecordResult extends org.apache.avro.specific.SpecificReco
    * Sets the value of the 'accessRecord' field.
    * @param value the value to set.
    */
-  public void setAccessRecord(com.dycn.healthairport.faceplate.avro.NewAccessRecord value) {
+  public void setAccessRecord(com.dycn.airportconsumer.faceplate.avro.NewAccessRecord value) {
     this.accessRecord = value;
   }
 
@@ -91,8 +91,8 @@ public class NewAccessRecordResult extends org.apache.avro.specific.SpecificReco
    * Creates a new NewAccessRecordResult RecordBuilder.
    * @return A new NewAccessRecordResult RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.NewAccessRecordResult.Builder newBuilder() {
-    return new com.dycn.healthairport.faceplate.avro.NewAccessRecordResult.Builder();
+  public static com.dycn.airportconsumer.faceplate.avro.NewAccessRecordResult.Builder newBuilder() {
+    return new com.dycn.airportconsumer.faceplate.avro.NewAccessRecordResult.Builder();
   }
 
   /**
@@ -100,8 +100,8 @@ public class NewAccessRecordResult extends org.apache.avro.specific.SpecificReco
    * @param other The existing builder to copy.
    * @return A new NewAccessRecordResult RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.NewAccessRecordResult.Builder newBuilder(com.dycn.healthairport.faceplate.avro.NewAccessRecordResult.Builder other) {
-    return new com.dycn.healthairport.faceplate.avro.NewAccessRecordResult.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.NewAccessRecordResult.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.NewAccessRecordResult.Builder other) {
+    return new com.dycn.airportconsumer.faceplate.avro.NewAccessRecordResult.Builder(other);
   }
 
   /**
@@ -109,8 +109,8 @@ public class NewAccessRecordResult extends org.apache.avro.specific.SpecificReco
    * @param other The existing instance to copy.
    * @return A new NewAccessRecordResult RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.NewAccessRecordResult.Builder newBuilder(com.dycn.healthairport.faceplate.avro.NewAccessRecordResult other) {
-    return new com.dycn.healthairport.faceplate.avro.NewAccessRecordResult.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.NewAccessRecordResult.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.NewAccessRecordResult other) {
+    return new com.dycn.airportconsumer.faceplate.avro.NewAccessRecordResult.Builder(other);
   }
 
   /**
@@ -119,8 +119,8 @@ public class NewAccessRecordResult extends org.apache.avro.specific.SpecificReco
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<NewAccessRecordResult>
     implements org.apache.avro.data.RecordBuilder<NewAccessRecordResult> {
 
-    private com.dycn.healthairport.faceplate.avro.NewAccessRecord accessRecord;
-    private com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder accessRecordBuilder;
+    private com.dycn.airportconsumer.faceplate.avro.NewAccessRecord accessRecord;
+    private com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder accessRecordBuilder;
     /** 每一条过人日志的唯一id */
     private String checkpoint;
 
@@ -133,14 +133,14 @@ public class NewAccessRecordResult extends org.apache.avro.specific.SpecificReco
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.NewAccessRecordResult.Builder other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.NewAccessRecordResult.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.accessRecord)) {
         this.accessRecord = data().deepCopy(fields()[0].schema(), other.accessRecord);
         fieldSetFlags()[0] = true;
       }
       if (other.hasAccessRecordBuilder()) {
-        this.accessRecordBuilder = com.dycn.healthairport.faceplate.avro.NewAccessRecord.newBuilder(other.getAccessRecordBuilder());
+        this.accessRecordBuilder = com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.newBuilder(other.getAccessRecordBuilder());
       }
       if (isValidValue(fields()[1], other.checkpoint)) {
         this.checkpoint = data().deepCopy(fields()[1].schema(), other.checkpoint);
@@ -152,7 +152,7 @@ public class NewAccessRecordResult extends org.apache.avro.specific.SpecificReco
      * Creates a Builder by copying an existing NewAccessRecordResult instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.NewAccessRecordResult other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.NewAccessRecordResult other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.accessRecord)) {
         this.accessRecord = data().deepCopy(fields()[0].schema(), other.accessRecord);
@@ -169,7 +169,7 @@ public class NewAccessRecordResult extends org.apache.avro.specific.SpecificReco
       * Gets the value of the 'accessRecord' field.
       * @return The value.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord getAccessRecord() {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord getAccessRecord() {
       return accessRecord;
     }
 
@@ -178,7 +178,7 @@ public class NewAccessRecordResult extends org.apache.avro.specific.SpecificReco
       * @param value The value of 'accessRecord'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecordResult.Builder setAccessRecord(com.dycn.healthairport.faceplate.avro.NewAccessRecord value) {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecordResult.Builder setAccessRecord(com.dycn.airportconsumer.faceplate.avro.NewAccessRecord value) {
       validate(fields()[0], value);
       this.accessRecordBuilder = null;
       this.accessRecord = value;
@@ -198,12 +198,12 @@ public class NewAccessRecordResult extends org.apache.avro.specific.SpecificReco
      * Gets the Builder instance for the 'accessRecord' field and creates one if it doesn't exist yet.
      * @return This builder.
      */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder getAccessRecordBuilder() {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder getAccessRecordBuilder() {
       if (accessRecordBuilder == null) {
         if (hasAccessRecord()) {
-          setAccessRecordBuilder(com.dycn.healthairport.faceplate.avro.NewAccessRecord.newBuilder(accessRecord));
+          setAccessRecordBuilder(com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.newBuilder(accessRecord));
         } else {
-          setAccessRecordBuilder(com.dycn.healthairport.faceplate.avro.NewAccessRecord.newBuilder());
+          setAccessRecordBuilder(com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.newBuilder());
         }
       }
       return accessRecordBuilder;
@@ -214,7 +214,7 @@ public class NewAccessRecordResult extends org.apache.avro.specific.SpecificReco
      * @param value The builder instance that must be set.
      * @return This builder.
      */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecordResult.Builder setAccessRecordBuilder(com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder value) {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecordResult.Builder setAccessRecordBuilder(com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder value) {
       clearAccessRecord();
       accessRecordBuilder = value;
       return this;
@@ -232,7 +232,7 @@ public class NewAccessRecordResult extends org.apache.avro.specific.SpecificReco
       * Clears the value of the 'accessRecord' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecordResult.Builder clearAccessRecord() {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecordResult.Builder clearAccessRecord() {
       accessRecord = null;
       accessRecordBuilder = null;
       fieldSetFlags()[0] = false;
@@ -254,7 +254,7 @@ public class NewAccessRecordResult extends org.apache.avro.specific.SpecificReco
       * @param value The value of 'checkpoint'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecordResult.Builder setCheckpoint(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecordResult.Builder setCheckpoint(String value) {
       validate(fields()[1], value);
       this.checkpoint = value;
       fieldSetFlags()[1] = true;
@@ -276,7 +276,7 @@ public class NewAccessRecordResult extends org.apache.avro.specific.SpecificReco
       * 每一条过人日志的唯一id
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecordResult.Builder clearCheckpoint() {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecordResult.Builder clearCheckpoint() {
       checkpoint = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -289,7 +289,7 @@ public class NewAccessRecordResult extends org.apache.avro.specific.SpecificReco
         if (accessRecordBuilder != null) {
           record.accessRecord = this.accessRecordBuilder.build();
         } else {
-          record.accessRecord = fieldSetFlags()[0] ? this.accessRecord : (com.dycn.healthairport.faceplate.avro.NewAccessRecord) defaultValue(fields()[0]);
+          record.accessRecord = fieldSetFlags()[0] ? this.accessRecord : (com.dycn.airportconsumer.faceplate.avro.NewAccessRecord) defaultValue(fields()[0]);
         }
         record.checkpoint = fieldSetFlags()[1] ? this.checkpoint : (String) defaultValue(fields()[1]);
         return record;

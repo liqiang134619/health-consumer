@@ -11,7 +11,7 @@ import org.apache.avro.specific.SpecificData;
 @org.apache.avro.specific.AvroGenerated
 public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = 3595752124397496291L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NewAccessRecord\",\"namespace\":\"com.dycn.healthairport.faceplate.avro\",\"fields\":[{\"name\":\"devId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"设备id\"},{\"name\":\"timestamp\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"过人日志时间戳\"},{\"name\":\"personId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"人像id\"},{\"name\":\"featureIndex\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"featureMd5\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"人像的特征值的md5 hash值\"},{\"name\":\"similarity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"人像比对的相似度\"},{\"name\":\"imagesList\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"NewImageStruct\",\"fields\":[{\"name\":\"imageType\",\"type\":{\"type\":\"enum\",\"name\":\"NewImageType\",\"symbols\":[\"SCENE_IMAGE\",\"CAPTURED_IMAGE\",\"INFRARED_SCENE_IMAGE\",\"INFRARED_CAPTURED_IMAGE\"]}},{\"name\":\"image\",\"type\":[\"null\",\"bytes\"]}]}},\"doc\":\"捕获的人像图,包括捕获图,场景图,红外捕获图,红外场景图\"},{\"name\":\"featuresList\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"NewFaceFeatureStruct\",\"fields\":[{\"name\":\"featureType\",\"type\":{\"type\":\"enum\",\"name\":\"NewFeatureType\",\"symbols\":[\"RGB_FEATURE\",\"INFRARED_FEATURE\"]}},{\"name\":\"faceFeature\",\"type\":[\"null\",\"bytes\"]}]}},\"doc\":\"人像的特征值,接口返回该值为null\"},{\"name\":\"cardNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"卡号\"},{\"name\":\"passed\",\"type\":[{\"type\":\"record\",\"name\":\"NewAccessGranted\",\"fields\":[]},{\"type\":\"record\",\"name\":\"NewAccessDenied\",\"fields\":[]}]},{\"name\":\"password\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"密码\",\"default\":\"\"},{\"name\":\"verificationType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"过人比对方式，基本方式有：刷脸、刷卡、QR、密码、刷卡刷脸、刷脸密码、刷脸刷卡\",\"default\":\"\"},{\"name\":\"QRCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":\"\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NewAccessRecord\",\"namespace\":\"com.dycn.airportconsumer.faceplate.avro\",\"fields\":[{\"name\":\"devId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"设备id\"},{\"name\":\"timestamp\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"过人日志时间戳\"},{\"name\":\"personId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"人像id\"},{\"name\":\"featureIndex\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"featureMd5\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"人像的特征值的md5 hash值\"},{\"name\":\"similarity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"人像比对的相似度\"},{\"name\":\"imagesList\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"NewImageStruct\",\"fields\":[{\"name\":\"imageType\",\"type\":{\"type\":\"enum\",\"name\":\"NewImageType\",\"symbols\":[\"SCENE_IMAGE\",\"CAPTURED_IMAGE\",\"INFRARED_SCENE_IMAGE\",\"INFRARED_CAPTURED_IMAGE\"]}},{\"name\":\"image\",\"type\":[\"null\",\"bytes\"]}]}},\"doc\":\"捕获的人像图,包括捕获图,场景图,红外捕获图,红外场景图\"},{\"name\":\"featuresList\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"NewFaceFeatureStruct\",\"fields\":[{\"name\":\"featureType\",\"type\":{\"type\":\"enum\",\"name\":\"NewFeatureType\",\"symbols\":[\"RGB_FEATURE\",\"INFRARED_FEATURE\"]}},{\"name\":\"faceFeature\",\"type\":[\"null\",\"bytes\"]}]}},\"doc\":\"人像的特征值,接口返回该值为null\"},{\"name\":\"cardNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"卡号\"},{\"name\":\"passed\",\"type\":[{\"type\":\"record\",\"name\":\"NewAccessGranted\",\"fields\":[]},{\"type\":\"record\",\"name\":\"NewAccessDenied\",\"fields\":[]}]},{\"name\":\"password\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"密码\",\"default\":\"\"},{\"name\":\"verificationType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"过人比对方式，基本方式有：刷脸、刷卡、QR、密码、刷卡刷脸、刷脸密码、刷脸刷卡\",\"default\":\"\"},{\"name\":\"QRCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":\"\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   /** 设备id */
   @Deprecated public String devId;
@@ -25,9 +25,9 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
   /** 人像比对的相似度 */
   @Deprecated public String similarity;
   /** 捕获的人像图,包括捕获图,场景图,红外捕获图,红外场景图 */
-  @Deprecated public java.util.List<com.dycn.healthairport.faceplate.avro.NewImageStruct> imagesList;
+  @Deprecated public java.util.List<com.dycn.airportconsumer.faceplate.avro.NewImageStruct> imagesList;
   /** 人像的特征值,接口返回该值为null */
-  @Deprecated public java.util.List<com.dycn.healthairport.faceplate.avro.NewFaceFeatureStruct> featuresList;
+  @Deprecated public java.util.List<com.dycn.airportconsumer.faceplate.avro.NewFaceFeatureStruct> featuresList;
   /** 卡号 */
   @Deprecated public String cardNumber;
   @Deprecated public Object passed;
@@ -60,7 +60,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
    * @param verificationType 过人比对方式，基本方式有：刷脸、刷卡、QR、密码、刷卡刷脸、刷脸密码、刷脸刷卡
    * @param QRCode The new value for QRCode
    */
-  public NewAccessRecord(String devId, String timestamp, String personId, String featureIndex, String featureMd5, String similarity, java.util.List<com.dycn.healthairport.faceplate.avro.NewImageStruct> imagesList, java.util.List<com.dycn.healthairport.faceplate.avro.NewFaceFeatureStruct> featuresList, String cardNumber, Object passed, String password, String verificationType, String QRCode) {
+  public NewAccessRecord(String devId, String timestamp, String personId, String featureIndex, String featureMd5, String similarity, java.util.List<com.dycn.airportconsumer.faceplate.avro.NewImageStruct> imagesList, java.util.List<com.dycn.airportconsumer.faceplate.avro.NewFaceFeatureStruct> featuresList, String cardNumber, Object passed, String password, String verificationType, String QRCode) {
     this.devId = devId;
     this.timestamp = timestamp;
     this.personId = personId;
@@ -107,8 +107,8 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
     case 3: featureIndex = (String)value$; break;
     case 4: featureMd5 = (String)value$; break;
     case 5: similarity = (String)value$; break;
-    case 6: imagesList = (java.util.List<com.dycn.healthairport.faceplate.avro.NewImageStruct>)value$; break;
-    case 7: featuresList = (java.util.List<com.dycn.healthairport.faceplate.avro.NewFaceFeatureStruct>)value$; break;
+    case 6: imagesList = (java.util.List<com.dycn.airportconsumer.faceplate.avro.NewImageStruct>)value$; break;
+    case 7: featuresList = (java.util.List<com.dycn.airportconsumer.faceplate.avro.NewFaceFeatureStruct>)value$; break;
     case 8: cardNumber = (String)value$; break;
     case 9: passed = (Object)value$; break;
     case 10: password = (String)value$; break;
@@ -223,7 +223,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
    * Gets the value of the 'imagesList' field.
    * @return 捕获的人像图,包括捕获图,场景图,红外捕获图,红外场景图
    */
-  public java.util.List<com.dycn.healthairport.faceplate.avro.NewImageStruct> getImagesList() {
+  public java.util.List<com.dycn.airportconsumer.faceplate.avro.NewImageStruct> getImagesList() {
     return imagesList;
   }
 
@@ -232,7 +232,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
    * 捕获的人像图,包括捕获图,场景图,红外捕获图,红外场景图
    * @param value the value to set.
    */
-  public void setImagesList(java.util.List<com.dycn.healthairport.faceplate.avro.NewImageStruct> value) {
+  public void setImagesList(java.util.List<com.dycn.airportconsumer.faceplate.avro.NewImageStruct> value) {
     this.imagesList = value;
   }
 
@@ -240,7 +240,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
    * Gets the value of the 'featuresList' field.
    * @return 人像的特征值,接口返回该值为null
    */
-  public java.util.List<com.dycn.healthairport.faceplate.avro.NewFaceFeatureStruct> getFeaturesList() {
+  public java.util.List<com.dycn.airportconsumer.faceplate.avro.NewFaceFeatureStruct> getFeaturesList() {
     return featuresList;
   }
 
@@ -249,7 +249,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
    * 人像的特征值,接口返回该值为null
    * @param value the value to set.
    */
-  public void setFeaturesList(java.util.List<com.dycn.healthairport.faceplate.avro.NewFaceFeatureStruct> value) {
+  public void setFeaturesList(java.util.List<com.dycn.airportconsumer.faceplate.avro.NewFaceFeatureStruct> value) {
     this.featuresList = value;
   }
 
@@ -340,8 +340,8 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
    * Creates a new NewAccessRecord RecordBuilder.
    * @return A new NewAccessRecord RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder newBuilder() {
-    return new com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder();
+  public static com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder newBuilder() {
+    return new com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder();
   }
 
   /**
@@ -349,8 +349,8 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
    * @param other The existing builder to copy.
    * @return A new NewAccessRecord RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder newBuilder(com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder other) {
-    return new com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder other) {
+    return new com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder(other);
   }
 
   /**
@@ -358,8 +358,8 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
    * @param other The existing instance to copy.
    * @return A new NewAccessRecord RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder newBuilder(com.dycn.healthairport.faceplate.avro.NewAccessRecord other) {
-    return new com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.NewAccessRecord other) {
+    return new com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder(other);
   }
 
   /**
@@ -380,9 +380,9 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
     /** 人像比对的相似度 */
     private String similarity;
     /** 捕获的人像图,包括捕获图,场景图,红外捕获图,红外场景图 */
-    private java.util.List<com.dycn.healthairport.faceplate.avro.NewImageStruct> imagesList;
+    private java.util.List<com.dycn.airportconsumer.faceplate.avro.NewImageStruct> imagesList;
     /** 人像的特征值,接口返回该值为null */
-    private java.util.List<com.dycn.healthairport.faceplate.avro.NewFaceFeatureStruct> featuresList;
+    private java.util.List<com.dycn.airportconsumer.faceplate.avro.NewFaceFeatureStruct> featuresList;
     /** 卡号 */
     private String cardNumber;
     private Object passed;
@@ -401,7 +401,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.devId)) {
         this.devId = data().deepCopy(fields()[0].schema(), other.devId);
@@ -461,7 +461,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
      * Creates a Builder by copying an existing NewAccessRecord instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.NewAccessRecord other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.NewAccessRecord other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.devId)) {
         this.devId = data().deepCopy(fields()[0].schema(), other.devId);
@@ -532,7 +532,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'devId'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder setDevId(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder setDevId(String value) {
       validate(fields()[0], value);
       this.devId = value;
       fieldSetFlags()[0] = true;
@@ -554,7 +554,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * 设备id
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder clearDevId() {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder clearDevId() {
       devId = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -575,7 +575,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'timestamp'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder setTimestamp(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder setTimestamp(String value) {
       validate(fields()[1], value);
       this.timestamp = value;
       fieldSetFlags()[1] = true;
@@ -597,7 +597,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * 过人日志时间戳
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder clearTimestamp() {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder clearTimestamp() {
       timestamp = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -618,7 +618,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'personId'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder setPersonId(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder setPersonId(String value) {
       validate(fields()[2], value);
       this.personId = value;
       fieldSetFlags()[2] = true;
@@ -640,7 +640,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * 人像id
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder clearPersonId() {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder clearPersonId() {
       personId = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -659,7 +659,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'featureIndex'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder setFeatureIndex(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder setFeatureIndex(String value) {
       validate(fields()[3], value);
       this.featureIndex = value;
       fieldSetFlags()[3] = true;
@@ -679,7 +679,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'featureIndex' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder clearFeatureIndex() {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder clearFeatureIndex() {
       featureIndex = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -700,7 +700,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'featureMd5'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder setFeatureMd5(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder setFeatureMd5(String value) {
       validate(fields()[4], value);
       this.featureMd5 = value;
       fieldSetFlags()[4] = true;
@@ -722,7 +722,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * 人像的特征值的md5 hash值
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder clearFeatureMd5() {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder clearFeatureMd5() {
       featureMd5 = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -743,7 +743,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'similarity'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder setSimilarity(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder setSimilarity(String value) {
       validate(fields()[5], value);
       this.similarity = value;
       fieldSetFlags()[5] = true;
@@ -765,7 +765,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * 人像比对的相似度
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder clearSimilarity() {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder clearSimilarity() {
       similarity = null;
       fieldSetFlags()[5] = false;
       return this;
@@ -776,7 +776,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * 捕获的人像图,包括捕获图,场景图,红外捕获图,红外场景图
       * @return The value.
       */
-    public java.util.List<com.dycn.healthairport.faceplate.avro.NewImageStruct> getImagesList() {
+    public java.util.List<com.dycn.airportconsumer.faceplate.avro.NewImageStruct> getImagesList() {
       return imagesList;
     }
 
@@ -786,7 +786,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'imagesList'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder setImagesList(java.util.List<com.dycn.healthairport.faceplate.avro.NewImageStruct> value) {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder setImagesList(java.util.List<com.dycn.airportconsumer.faceplate.avro.NewImageStruct> value) {
       validate(fields()[6], value);
       this.imagesList = value;
       fieldSetFlags()[6] = true;
@@ -808,7 +808,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * 捕获的人像图,包括捕获图,场景图,红外捕获图,红外场景图
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder clearImagesList() {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder clearImagesList() {
       imagesList = null;
       fieldSetFlags()[6] = false;
       return this;
@@ -819,7 +819,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * 人像的特征值,接口返回该值为null
       * @return The value.
       */
-    public java.util.List<com.dycn.healthairport.faceplate.avro.NewFaceFeatureStruct> getFeaturesList() {
+    public java.util.List<com.dycn.airportconsumer.faceplate.avro.NewFaceFeatureStruct> getFeaturesList() {
       return featuresList;
     }
 
@@ -829,7 +829,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'featuresList'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder setFeaturesList(java.util.List<com.dycn.healthairport.faceplate.avro.NewFaceFeatureStruct> value) {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder setFeaturesList(java.util.List<com.dycn.airportconsumer.faceplate.avro.NewFaceFeatureStruct> value) {
       validate(fields()[7], value);
       this.featuresList = value;
       fieldSetFlags()[7] = true;
@@ -851,7 +851,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * 人像的特征值,接口返回该值为null
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder clearFeaturesList() {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder clearFeaturesList() {
       featuresList = null;
       fieldSetFlags()[7] = false;
       return this;
@@ -872,7 +872,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'cardNumber'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder setCardNumber(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder setCardNumber(String value) {
       validate(fields()[8], value);
       this.cardNumber = value;
       fieldSetFlags()[8] = true;
@@ -894,7 +894,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * 卡号
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder clearCardNumber() {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder clearCardNumber() {
       cardNumber = null;
       fieldSetFlags()[8] = false;
       return this;
@@ -913,7 +913,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'passed'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder setPassed(Object value) {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder setPassed(Object value) {
       validate(fields()[9], value);
       this.passed = value;
       fieldSetFlags()[9] = true;
@@ -933,7 +933,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'passed' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder clearPassed() {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder clearPassed() {
       passed = null;
       fieldSetFlags()[9] = false;
       return this;
@@ -954,7 +954,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'password'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder setPassword(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder setPassword(String value) {
       validate(fields()[10], value);
       this.password = value;
       fieldSetFlags()[10] = true;
@@ -976,7 +976,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * 密码
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder clearPassword() {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder clearPassword() {
       password = null;
       fieldSetFlags()[10] = false;
       return this;
@@ -997,7 +997,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'verificationType'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder setVerificationType(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder setVerificationType(String value) {
       validate(fields()[11], value);
       this.verificationType = value;
       fieldSetFlags()[11] = true;
@@ -1019,7 +1019,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * 过人比对方式，基本方式有：刷脸、刷卡、QR、密码、刷卡刷脸、刷脸密码、刷脸刷卡
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder clearVerificationType() {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder clearVerificationType() {
       verificationType = null;
       fieldSetFlags()[11] = false;
       return this;
@@ -1038,7 +1038,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'QRCode'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder setQRCode(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder setQRCode(String value) {
       validate(fields()[12], value);
       this.QRCode = value;
       fieldSetFlags()[12] = true;
@@ -1058,7 +1058,7 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'QRCode' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.NewAccessRecord.Builder clearQRCode() {
+    public com.dycn.airportconsumer.faceplate.avro.NewAccessRecord.Builder clearQRCode() {
       QRCode = null;
       fieldSetFlags()[12] = false;
       return this;
@@ -1074,8 +1074,8 @@ public class NewAccessRecord extends org.apache.avro.specific.SpecificRecordBase
         record.featureIndex = fieldSetFlags()[3] ? this.featureIndex : (String) defaultValue(fields()[3]);
         record.featureMd5 = fieldSetFlags()[4] ? this.featureMd5 : (String) defaultValue(fields()[4]);
         record.similarity = fieldSetFlags()[5] ? this.similarity : (String) defaultValue(fields()[5]);
-        record.imagesList = fieldSetFlags()[6] ? this.imagesList : (java.util.List<com.dycn.healthairport.faceplate.avro.NewImageStruct>) defaultValue(fields()[6]);
-        record.featuresList = fieldSetFlags()[7] ? this.featuresList : (java.util.List<com.dycn.healthairport.faceplate.avro.NewFaceFeatureStruct>) defaultValue(fields()[7]);
+        record.imagesList = fieldSetFlags()[6] ? this.imagesList : (java.util.List<com.dycn.airportconsumer.faceplate.avro.NewImageStruct>) defaultValue(fields()[6]);
+        record.featuresList = fieldSetFlags()[7] ? this.featuresList : (java.util.List<com.dycn.airportconsumer.faceplate.avro.NewFaceFeatureStruct>) defaultValue(fields()[7]);
         record.cardNumber = fieldSetFlags()[8] ? this.cardNumber : (String) defaultValue(fields()[8]);
         record.passed = fieldSetFlags()[9] ? this.passed : (Object) defaultValue(fields()[9]);
         record.password = fieldSetFlags()[10] ? this.password : (String) defaultValue(fields()[10]);

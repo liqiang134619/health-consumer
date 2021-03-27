@@ -11,17 +11,17 @@ import org.apache.avro.specific.SpecificData;
 @org.apache.avro.specific.AvroGenerated
 public class Person extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = -5646356420754590956L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Person\",\"namespace\":\"com.dycn.healthairport.faceplate.avro\",\"fields\":[{\"name\":\"id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"displayInfo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"displayPic\",\"type\":[\"null\",\"bytes\"]},{\"name\":\"picChecksum\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"faceFeatures\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"FaceFeatures\",\"fields\":[{\"name\":\"faceFeature\",\"type\":[\"null\",\"bytes\"]}]}}]},{\"name\":\"featureChecksum\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"otherInfoChecksum\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"cardNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"policy\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Policy\",\"fields\":[{\"name\":\"calendar\",\"type\":{\"type\":\"record\",\"name\":\"Calendar\",\"fields\":[{\"name\":\"startDate\",\"type\":\"long\"},{\"name\":\"restingDays\",\"type\":{\"type\":\"array\",\"items\":\"int\"}}]}},{\"name\":\"passTime\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"TimeSpan\",\"fields\":[{\"name\":\"startSeconds\",\"type\":\"int\"},{\"name\":\"span\",\"type\":\"int\"}]}}},{\"name\":\"passQuota\",\"type\":\"int\"},{\"name\":\"validTimestamp\",\"type\":\"long\"}]}}]}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Person\",\"namespace\":\"com.dycn.airportconsumer.faceplate.avro\",\"fields\":[{\"name\":\"id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"displayInfo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"displayPic\",\"type\":[\"null\",\"bytes\"]},{\"name\":\"picChecksum\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"faceFeatures\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"FaceFeatures\",\"fields\":[{\"name\":\"faceFeature\",\"type\":[\"null\",\"bytes\"]}]}}]},{\"name\":\"featureChecksum\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"otherInfoChecksum\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"cardNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"policy\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Policy\",\"fields\":[{\"name\":\"calendar\",\"type\":{\"type\":\"record\",\"name\":\"Calendar\",\"fields\":[{\"name\":\"startDate\",\"type\":\"long\"},{\"name\":\"restingDays\",\"type\":{\"type\":\"array\",\"items\":\"int\"}}]}},{\"name\":\"passTime\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"TimeSpan\",\"fields\":[{\"name\":\"startSeconds\",\"type\":\"int\"},{\"name\":\"span\",\"type\":\"int\"}]}}},{\"name\":\"passQuota\",\"type\":\"int\"},{\"name\":\"validTimestamp\",\"type\":\"long\"}]}}]}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public String id;
   @Deprecated public String displayInfo;
   @Deprecated public java.nio.ByteBuffer displayPic;
   @Deprecated public String picChecksum;
-  @Deprecated public java.util.List<com.dycn.healthairport.faceplate.avro.FaceFeatures> faceFeatures;
+  @Deprecated public java.util.List<com.dycn.airportconsumer.faceplate.avro.FaceFeatures> faceFeatures;
   @Deprecated public String featureChecksum;
   @Deprecated public String otherInfoChecksum;
   @Deprecated public String cardNo;
-  @Deprecated public java.util.List<com.dycn.healthairport.faceplate.avro.Policy> policy;
+  @Deprecated public java.util.List<com.dycn.airportconsumer.faceplate.avro.Policy> policy;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -42,7 +42,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param cardNo The new value for cardNo
    * @param policy The new value for policy
    */
-  public Person(String id, String displayInfo, java.nio.ByteBuffer displayPic, String picChecksum, java.util.List<com.dycn.healthairport.faceplate.avro.FaceFeatures> faceFeatures, String featureChecksum, String otherInfoChecksum, String cardNo, java.util.List<com.dycn.healthairport.faceplate.avro.Policy> policy) {
+  public Person(String id, String displayInfo, java.nio.ByteBuffer displayPic, String picChecksum, java.util.List<com.dycn.airportconsumer.faceplate.avro.FaceFeatures> faceFeatures, String featureChecksum, String otherInfoChecksum, String cardNo, java.util.List<com.dycn.airportconsumer.faceplate.avro.Policy> policy) {
     this.id = id;
     this.displayInfo = displayInfo;
     this.displayPic = displayPic;
@@ -79,11 +79,11 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
     case 1: displayInfo = (String)value$; break;
     case 2: displayPic = (java.nio.ByteBuffer)value$; break;
     case 3: picChecksum = (String)value$; break;
-    case 4: faceFeatures = (java.util.List<com.dycn.healthairport.faceplate.avro.FaceFeatures>)value$; break;
+    case 4: faceFeatures = (java.util.List<com.dycn.airportconsumer.faceplate.avro.FaceFeatures>)value$; break;
     case 5: featureChecksum = (String)value$; break;
     case 6: otherInfoChecksum = (String)value$; break;
     case 7: cardNo = (String)value$; break;
-    case 8: policy = (java.util.List<com.dycn.healthairport.faceplate.avro.Policy>)value$; break;
+    case 8: policy = (java.util.List<com.dycn.airportconsumer.faceplate.avro.Policy>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -156,7 +156,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
    * Gets the value of the 'faceFeatures' field.
    * @return The value of the 'faceFeatures' field.
    */
-  public java.util.List<com.dycn.healthairport.faceplate.avro.FaceFeatures> getFaceFeatures() {
+  public java.util.List<com.dycn.airportconsumer.faceplate.avro.FaceFeatures> getFaceFeatures() {
     return faceFeatures;
   }
 
@@ -164,7 +164,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
    * Sets the value of the 'faceFeatures' field.
    * @param value the value to set.
    */
-  public void setFaceFeatures(java.util.List<com.dycn.healthairport.faceplate.avro.FaceFeatures> value) {
+  public void setFaceFeatures(java.util.List<com.dycn.airportconsumer.faceplate.avro.FaceFeatures> value) {
     this.faceFeatures = value;
   }
 
@@ -220,7 +220,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
    * Gets the value of the 'policy' field.
    * @return The value of the 'policy' field.
    */
-  public java.util.List<com.dycn.healthairport.faceplate.avro.Policy> getPolicy() {
+  public java.util.List<com.dycn.airportconsumer.faceplate.avro.Policy> getPolicy() {
     return policy;
   }
 
@@ -228,7 +228,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
    * Sets the value of the 'policy' field.
    * @param value the value to set.
    */
-  public void setPolicy(java.util.List<com.dycn.healthairport.faceplate.avro.Policy> value) {
+  public void setPolicy(java.util.List<com.dycn.airportconsumer.faceplate.avro.Policy> value) {
     this.policy = value;
   }
 
@@ -236,8 +236,8 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
    * Creates a new Person RecordBuilder.
    * @return A new Person RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.Person.Builder newBuilder() {
-    return new com.dycn.healthairport.faceplate.avro.Person.Builder();
+  public static com.dycn.airportconsumer.faceplate.avro.Person.Builder newBuilder() {
+    return new com.dycn.airportconsumer.faceplate.avro.Person.Builder();
   }
 
   /**
@@ -245,8 +245,8 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param other The existing builder to copy.
    * @return A new Person RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.Person.Builder newBuilder(com.dycn.healthairport.faceplate.avro.Person.Builder other) {
-    return new com.dycn.healthairport.faceplate.avro.Person.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.Person.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.Person.Builder other) {
+    return new com.dycn.airportconsumer.faceplate.avro.Person.Builder(other);
   }
 
   /**
@@ -254,8 +254,8 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param other The existing instance to copy.
    * @return A new Person RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.Person.Builder newBuilder(com.dycn.healthairport.faceplate.avro.Person other) {
-    return new com.dycn.healthairport.faceplate.avro.Person.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.Person.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.Person other) {
+    return new com.dycn.airportconsumer.faceplate.avro.Person.Builder(other);
   }
 
   /**
@@ -268,11 +268,11 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
     private String displayInfo;
     private java.nio.ByteBuffer displayPic;
     private String picChecksum;
-    private java.util.List<com.dycn.healthairport.faceplate.avro.FaceFeatures> faceFeatures;
+    private java.util.List<com.dycn.airportconsumer.faceplate.avro.FaceFeatures> faceFeatures;
     private String featureChecksum;
     private String otherInfoChecksum;
     private String cardNo;
-    private java.util.List<com.dycn.healthairport.faceplate.avro.Policy> policy;
+    private java.util.List<com.dycn.airportconsumer.faceplate.avro.Policy> policy;
 
     /** Creates a new Builder */
     private Builder() {
@@ -283,7 +283,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.Person.Builder other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.Person.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.id)) {
         this.id = data().deepCopy(fields()[0].schema(), other.id);
@@ -327,7 +327,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
      * Creates a Builder by copying an existing Person instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.Person other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.Person other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.id)) {
         this.id = data().deepCopy(fields()[0].schema(), other.id);
@@ -380,7 +380,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'id'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder setId(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder setId(String value) {
       validate(fields()[0], value);
       this.id = value;
       fieldSetFlags()[0] = true;
@@ -400,7 +400,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'id' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder clearId() {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder clearId() {
       id = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -419,7 +419,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'displayInfo'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder setDisplayInfo(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder setDisplayInfo(String value) {
       validate(fields()[1], value);
       this.displayInfo = value;
       fieldSetFlags()[1] = true;
@@ -439,7 +439,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'displayInfo' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder clearDisplayInfo() {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder clearDisplayInfo() {
       displayInfo = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -458,7 +458,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'displayPic'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder setDisplayPic(java.nio.ByteBuffer value) {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder setDisplayPic(java.nio.ByteBuffer value) {
       validate(fields()[2], value);
       this.displayPic = value;
       fieldSetFlags()[2] = true;
@@ -478,7 +478,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'displayPic' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder clearDisplayPic() {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder clearDisplayPic() {
       displayPic = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -497,7 +497,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'picChecksum'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder setPicChecksum(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder setPicChecksum(String value) {
       validate(fields()[3], value);
       this.picChecksum = value;
       fieldSetFlags()[3] = true;
@@ -517,7 +517,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'picChecksum' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder clearPicChecksum() {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder clearPicChecksum() {
       picChecksum = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -527,7 +527,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * Gets the value of the 'faceFeatures' field.
       * @return The value.
       */
-    public java.util.List<com.dycn.healthairport.faceplate.avro.FaceFeatures> getFaceFeatures() {
+    public java.util.List<com.dycn.airportconsumer.faceplate.avro.FaceFeatures> getFaceFeatures() {
       return faceFeatures;
     }
 
@@ -536,7 +536,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'faceFeatures'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder setFaceFeatures(java.util.List<com.dycn.healthairport.faceplate.avro.FaceFeatures> value) {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder setFaceFeatures(java.util.List<com.dycn.airportconsumer.faceplate.avro.FaceFeatures> value) {
       validate(fields()[4], value);
       this.faceFeatures = value;
       fieldSetFlags()[4] = true;
@@ -556,7 +556,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'faceFeatures' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder clearFaceFeatures() {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder clearFaceFeatures() {
       faceFeatures = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -575,7 +575,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'featureChecksum'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder setFeatureChecksum(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder setFeatureChecksum(String value) {
       validate(fields()[5], value);
       this.featureChecksum = value;
       fieldSetFlags()[5] = true;
@@ -595,7 +595,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'featureChecksum' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder clearFeatureChecksum() {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder clearFeatureChecksum() {
       featureChecksum = null;
       fieldSetFlags()[5] = false;
       return this;
@@ -614,7 +614,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'otherInfoChecksum'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder setOtherInfoChecksum(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder setOtherInfoChecksum(String value) {
       validate(fields()[6], value);
       this.otherInfoChecksum = value;
       fieldSetFlags()[6] = true;
@@ -634,7 +634,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'otherInfoChecksum' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder clearOtherInfoChecksum() {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder clearOtherInfoChecksum() {
       otherInfoChecksum = null;
       fieldSetFlags()[6] = false;
       return this;
@@ -653,7 +653,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'cardNo'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder setCardNo(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder setCardNo(String value) {
       validate(fields()[7], value);
       this.cardNo = value;
       fieldSetFlags()[7] = true;
@@ -673,7 +673,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'cardNo' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder clearCardNo() {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder clearCardNo() {
       cardNo = null;
       fieldSetFlags()[7] = false;
       return this;
@@ -683,7 +683,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * Gets the value of the 'policy' field.
       * @return The value.
       */
-    public java.util.List<com.dycn.healthairport.faceplate.avro.Policy> getPolicy() {
+    public java.util.List<com.dycn.airportconsumer.faceplate.avro.Policy> getPolicy() {
       return policy;
     }
 
@@ -692,7 +692,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'policy'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder setPolicy(java.util.List<com.dycn.healthairport.faceplate.avro.Policy> value) {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder setPolicy(java.util.List<com.dycn.airportconsumer.faceplate.avro.Policy> value) {
       validate(fields()[8], value);
       this.policy = value;
       fieldSetFlags()[8] = true;
@@ -712,7 +712,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'policy' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder clearPolicy() {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder clearPolicy() {
       policy = null;
       fieldSetFlags()[8] = false;
       return this;
@@ -726,11 +726,11 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
         record.displayInfo = fieldSetFlags()[1] ? this.displayInfo : (String) defaultValue(fields()[1]);
         record.displayPic = fieldSetFlags()[2] ? this.displayPic : (java.nio.ByteBuffer) defaultValue(fields()[2]);
         record.picChecksum = fieldSetFlags()[3] ? this.picChecksum : (String) defaultValue(fields()[3]);
-        record.faceFeatures = fieldSetFlags()[4] ? this.faceFeatures : (java.util.List<com.dycn.healthairport.faceplate.avro.FaceFeatures>) defaultValue(fields()[4]);
+        record.faceFeatures = fieldSetFlags()[4] ? this.faceFeatures : (java.util.List<com.dycn.airportconsumer.faceplate.avro.FaceFeatures>) defaultValue(fields()[4]);
         record.featureChecksum = fieldSetFlags()[5] ? this.featureChecksum : (String) defaultValue(fields()[5]);
         record.otherInfoChecksum = fieldSetFlags()[6] ? this.otherInfoChecksum : (String) defaultValue(fields()[6]);
         record.cardNo = fieldSetFlags()[7] ? this.cardNo : (String) defaultValue(fields()[7]);
-        record.policy = fieldSetFlags()[8] ? this.policy : (java.util.List<com.dycn.healthairport.faceplate.avro.Policy>) defaultValue(fields()[8]);
+        record.policy = fieldSetFlags()[8] ? this.policy : (java.util.List<com.dycn.airportconsumer.faceplate.avro.Policy>) defaultValue(fields()[8]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

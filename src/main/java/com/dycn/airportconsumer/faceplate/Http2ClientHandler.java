@@ -1,9 +1,6 @@
 package com.dycn.airportconsumer.faceplate;
 
-import com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo;
-import com.dycn.airportconsumer.faceplate.avro.Operation;
-import com.dycn.airportconsumer.faceplate.avro.Person;
-import com.dycn.airportconsumer.faceplate.avro.ResponseMessage;
+import com.dycn.airportconsumer.faceplate.avro.*;
 import com.dycn.airportconsumer.faceplate.common.ConnectionStatus;
 import com.dycn.airportconsumer.faceplate.common.HttpDefine;
 import com.dycn.airportconsumer.faceplate.common.HttpEventType;
@@ -28,6 +25,9 @@ import java.io.InputStream;
 import java.util.*;
 import java.util.concurrent.*;
 
+import static com.dycn.airportconsumer.faceplate.common.HttpDefine.*;
+import static com.dycn.airportconsumer.faceplate.common.HttpEventType.ACCESS_RECORD;
+import static com.dycn.airportconsumer.faceplate.common.HttpParameters.PERSONS;
 import static io.netty.handler.codec.http.HttpResponseStatus.*;
 
 /**
@@ -329,7 +329,7 @@ public class Http2ClientHandler extends DelegatingDecompressorFrameListener {
                             GeneralResponseExecutor.handleResponse(ctx, streamId, HttpDeviceInfo.getClassSchema(), rawDataInBytes);
                             break;
                         default:
-                            if (requestUrl.contains(HttpParameters.PERSONS)) {
+                            if (requestUrl.contains(PERSONS)) {
                                 SyncFuture syncFuture = futureMap.get(streamId);
                                 List<GenericRecord> records = new ArrayList<>();
                                 if (rawDataInBytes != null) {

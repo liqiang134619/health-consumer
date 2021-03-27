@@ -1,6 +1,5 @@
 package com.dycn.airportconsumer.common;
 
-import com.dycn.healthairport.exception.CommonException;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -173,9 +172,6 @@ public class ApiResponse<T> implements Serializable {
      * @param <T> 异常
      * @return ApiResponse
      */
-    public static <T extends CommonException> ApiResponse ofException(T t) {
-        return of(t.getCode(), t.getMessage(),Constant.EMPTY_STR, 0L);
-    }
 
 
 }

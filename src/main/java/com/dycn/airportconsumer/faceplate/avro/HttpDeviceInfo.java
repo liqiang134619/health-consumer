@@ -11,7 +11,7 @@ import org.apache.avro.specific.SpecificData;
 @org.apache.avro.specific.AvroGenerated
 public class HttpDeviceInfo extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = -2444383724930353575L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"HttpDeviceInfo\",\"namespace\":\"com.dycn.healthairport.faceplate.avro\",\"fields\":[{\"name\":\"devId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"displayInfo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"location\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"devStatus\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"version\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"HttpDeviceInfo\",\"namespace\":\"com.dycn.airportconsumer.faceplate.avro\",\"fields\":[{\"name\":\"devId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"displayInfo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"location\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"devStatus\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"version\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public String devId;
   @Deprecated public String displayInfo;
@@ -152,8 +152,8 @@ public class HttpDeviceInfo extends org.apache.avro.specific.SpecificRecordBase 
    * Creates a new HttpDeviceInfo RecordBuilder.
    * @return A new HttpDeviceInfo RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.HttpDeviceInfo.Builder newBuilder() {
-    return new com.dycn.healthairport.faceplate.avro.HttpDeviceInfo.Builder();
+  public static com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo.Builder newBuilder() {
+    return new com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo.Builder();
   }
 
   /**
@@ -161,8 +161,8 @@ public class HttpDeviceInfo extends org.apache.avro.specific.SpecificRecordBase 
    * @param other The existing builder to copy.
    * @return A new HttpDeviceInfo RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.HttpDeviceInfo.Builder newBuilder(com.dycn.healthairport.faceplate.avro.HttpDeviceInfo.Builder other) {
-    return new com.dycn.healthairport.faceplate.avro.HttpDeviceInfo.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo.Builder other) {
+    return new com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo.Builder(other);
   }
 
   /**
@@ -170,8 +170,8 @@ public class HttpDeviceInfo extends org.apache.avro.specific.SpecificRecordBase 
    * @param other The existing instance to copy.
    * @return A new HttpDeviceInfo RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.HttpDeviceInfo.Builder newBuilder(com.dycn.healthairport.faceplate.avro.HttpDeviceInfo other) {
-    return new com.dycn.healthairport.faceplate.avro.HttpDeviceInfo.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo other) {
+    return new com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo.Builder(other);
   }
 
   /**
@@ -195,7 +195,7 @@ public class HttpDeviceInfo extends org.apache.avro.specific.SpecificRecordBase 
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.HttpDeviceInfo.Builder other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.devId)) {
         this.devId = data().deepCopy(fields()[0].schema(), other.devId);
@@ -223,7 +223,7 @@ public class HttpDeviceInfo extends org.apache.avro.specific.SpecificRecordBase 
      * Creates a Builder by copying an existing HttpDeviceInfo instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.HttpDeviceInfo other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.devId)) {
         this.devId = data().deepCopy(fields()[0].schema(), other.devId);
@@ -260,7 +260,7 @@ public class HttpDeviceInfo extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'devId'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.HttpDeviceInfo.Builder setDevId(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo.Builder setDevId(String value) {
       validate(fields()[0], value);
       this.devId = value;
       fieldSetFlags()[0] = true;
@@ -280,7 +280,7 @@ public class HttpDeviceInfo extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'devId' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.HttpDeviceInfo.Builder clearDevId() {
+    public com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo.Builder clearDevId() {
       devId = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -299,7 +299,7 @@ public class HttpDeviceInfo extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'displayInfo'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.HttpDeviceInfo.Builder setDisplayInfo(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo.Builder setDisplayInfo(String value) {
       validate(fields()[1], value);
       this.displayInfo = value;
       fieldSetFlags()[1] = true;
@@ -319,7 +319,7 @@ public class HttpDeviceInfo extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'displayInfo' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.HttpDeviceInfo.Builder clearDisplayInfo() {
+    public com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo.Builder clearDisplayInfo() {
       displayInfo = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -338,7 +338,7 @@ public class HttpDeviceInfo extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'location'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.HttpDeviceInfo.Builder setLocation(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo.Builder setLocation(String value) {
       validate(fields()[2], value);
       this.location = value;
       fieldSetFlags()[2] = true;
@@ -358,7 +358,7 @@ public class HttpDeviceInfo extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'location' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.HttpDeviceInfo.Builder clearLocation() {
+    public com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo.Builder clearLocation() {
       location = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -377,7 +377,7 @@ public class HttpDeviceInfo extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'devStatus'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.HttpDeviceInfo.Builder setDevStatus(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo.Builder setDevStatus(String value) {
       validate(fields()[3], value);
       this.devStatus = value;
       fieldSetFlags()[3] = true;
@@ -397,7 +397,7 @@ public class HttpDeviceInfo extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'devStatus' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.HttpDeviceInfo.Builder clearDevStatus() {
+    public com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo.Builder clearDevStatus() {
       devStatus = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -416,7 +416,7 @@ public class HttpDeviceInfo extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'version'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.HttpDeviceInfo.Builder setVersion(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo.Builder setVersion(String value) {
       validate(fields()[4], value);
       this.version = value;
       fieldSetFlags()[4] = true;
@@ -436,7 +436,7 @@ public class HttpDeviceInfo extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'version' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.HttpDeviceInfo.Builder clearVersion() {
+    public com.dycn.airportconsumer.faceplate.avro.HttpDeviceInfo.Builder clearVersion() {
       version = null;
       fieldSetFlags()[4] = false;
       return this;

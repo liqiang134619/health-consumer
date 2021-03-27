@@ -11,7 +11,7 @@ import org.apache.avro.specific.SpecificData;
 @org.apache.avro.specific.AvroGenerated
 public class OperationRecord extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = 2134209185635073490L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"OperationRecord\",\"namespace\":\"com.dycn.healthairport.faceplate.avro\",\"fields\":[{\"name\":\"devId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"timestamp\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"userName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"operation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"summary\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"topic\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"OperationRecord\",\"namespace\":\"com.dycn.airportconsumer.faceplate.avro\",\"fields\":[{\"name\":\"devId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"timestamp\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"userName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"operation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"summary\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"topic\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public String devId;
   @Deprecated public String timestamp;
@@ -173,8 +173,8 @@ public class OperationRecord extends org.apache.avro.specific.SpecificRecordBase
    * Creates a new OperationRecord RecordBuilder.
    * @return A new OperationRecord RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.OperationRecord.Builder newBuilder() {
-    return new com.dycn.healthairport.faceplate.avro.OperationRecord.Builder();
+  public static com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder newBuilder() {
+    return new com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder();
   }
 
   /**
@@ -182,8 +182,8 @@ public class OperationRecord extends org.apache.avro.specific.SpecificRecordBase
    * @param other The existing builder to copy.
    * @return A new OperationRecord RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.OperationRecord.Builder newBuilder(com.dycn.healthairport.faceplate.avro.OperationRecord.Builder other) {
-    return new com.dycn.healthairport.faceplate.avro.OperationRecord.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder other) {
+    return new com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder(other);
   }
 
   /**
@@ -191,8 +191,8 @@ public class OperationRecord extends org.apache.avro.specific.SpecificRecordBase
    * @param other The existing instance to copy.
    * @return A new OperationRecord RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.OperationRecord.Builder newBuilder(com.dycn.healthairport.faceplate.avro.OperationRecord other) {
-    return new com.dycn.healthairport.faceplate.avro.OperationRecord.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.OperationRecord other) {
+    return new com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder(other);
   }
 
   /**
@@ -217,7 +217,7 @@ public class OperationRecord extends org.apache.avro.specific.SpecificRecordBase
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.OperationRecord.Builder other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.devId)) {
         this.devId = data().deepCopy(fields()[0].schema(), other.devId);
@@ -249,7 +249,7 @@ public class OperationRecord extends org.apache.avro.specific.SpecificRecordBase
      * Creates a Builder by copying an existing OperationRecord instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.OperationRecord other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.OperationRecord other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.devId)) {
         this.devId = data().deepCopy(fields()[0].schema(), other.devId);
@@ -290,7 +290,7 @@ public class OperationRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'devId'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.OperationRecord.Builder setDevId(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder setDevId(String value) {
       validate(fields()[0], value);
       this.devId = value;
       fieldSetFlags()[0] = true;
@@ -310,7 +310,7 @@ public class OperationRecord extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'devId' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.OperationRecord.Builder clearDevId() {
+    public com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder clearDevId() {
       devId = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -329,7 +329,7 @@ public class OperationRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'timestamp'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.OperationRecord.Builder setTimestamp(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder setTimestamp(String value) {
       validate(fields()[1], value);
       this.timestamp = value;
       fieldSetFlags()[1] = true;
@@ -349,7 +349,7 @@ public class OperationRecord extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'timestamp' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.OperationRecord.Builder clearTimestamp() {
+    public com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder clearTimestamp() {
       timestamp = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -368,7 +368,7 @@ public class OperationRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'userName'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.OperationRecord.Builder setUserName(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder setUserName(String value) {
       validate(fields()[2], value);
       this.userName = value;
       fieldSetFlags()[2] = true;
@@ -388,7 +388,7 @@ public class OperationRecord extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'userName' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.OperationRecord.Builder clearUserName() {
+    public com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder clearUserName() {
       userName = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -407,7 +407,7 @@ public class OperationRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'operation'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.OperationRecord.Builder setOperation(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder setOperation(String value) {
       validate(fields()[3], value);
       this.operation = value;
       fieldSetFlags()[3] = true;
@@ -427,7 +427,7 @@ public class OperationRecord extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'operation' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.OperationRecord.Builder clearOperation() {
+    public com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder clearOperation() {
       operation = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -446,7 +446,7 @@ public class OperationRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'summary'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.OperationRecord.Builder setSummary(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder setSummary(String value) {
       validate(fields()[4], value);
       this.summary = value;
       fieldSetFlags()[4] = true;
@@ -466,7 +466,7 @@ public class OperationRecord extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'summary' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.OperationRecord.Builder clearSummary() {
+    public com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder clearSummary() {
       summary = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -485,7 +485,7 @@ public class OperationRecord extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'topic'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.OperationRecord.Builder setTopic(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder setTopic(String value) {
       validate(fields()[5], value);
       this.topic = value;
       fieldSetFlags()[5] = true;
@@ -505,7 +505,7 @@ public class OperationRecord extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'topic' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.OperationRecord.Builder clearTopic() {
+    public com.dycn.airportconsumer.faceplate.avro.OperationRecord.Builder clearTopic() {
       topic = null;
       fieldSetFlags()[5] = false;
       return this;

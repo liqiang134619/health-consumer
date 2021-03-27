@@ -12,7 +12,7 @@ import org.apache.avro.specific.SpecificData;
 @org.apache.avro.specific.AvroGenerated
 public class FaceRec extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = -205953288453573934L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"FaceRec\",\"namespace\":\"com.dycn.healthairport.faceplate.avro\",\"doc\":\"图片中的人脸框rec\",\"fields\":[{\"name\":\"x\",\"type\":\"int\",\"doc\":\"人脸rec左上角x坐标\"},{\"name\":\"y\",\"type\":\"int\",\"doc\":\"人脸rec左上角y坐标\"},{\"name\":\"w\",\"type\":\"int\",\"doc\":\"人脸rec宽度\"},{\"name\":\"h\",\"type\":\"int\",\"doc\":\"人脸rec高度\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"FaceRec\",\"namespace\":\"com.dycn.airportconsumer.faceplate.avro\",\"doc\":\"图片中的人脸框rec\",\"fields\":[{\"name\":\"x\",\"type\":\"int\",\"doc\":\"人脸rec左上角x坐标\"},{\"name\":\"y\",\"type\":\"int\",\"doc\":\"人脸rec左上角y坐标\"},{\"name\":\"w\",\"type\":\"int\",\"doc\":\"人脸rec宽度\"},{\"name\":\"h\",\"type\":\"int\",\"doc\":\"人脸rec高度\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   /** 人脸rec左上角x坐标 */
   @Deprecated public int x;
@@ -140,8 +140,8 @@ public class FaceRec extends org.apache.avro.specific.SpecificRecordBase impleme
    * Creates a new FaceRec RecordBuilder.
    * @return A new FaceRec RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.FaceRec.Builder newBuilder() {
-    return new com.dycn.healthairport.faceplate.avro.FaceRec.Builder();
+  public static com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder newBuilder() {
+    return new com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder();
   }
 
   /**
@@ -149,8 +149,8 @@ public class FaceRec extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param other The existing builder to copy.
    * @return A new FaceRec RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.FaceRec.Builder newBuilder(com.dycn.healthairport.faceplate.avro.FaceRec.Builder other) {
-    return new com.dycn.healthairport.faceplate.avro.FaceRec.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder other) {
+    return new com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder(other);
   }
 
   /**
@@ -158,8 +158,8 @@ public class FaceRec extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param other The existing instance to copy.
    * @return A new FaceRec RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.FaceRec.Builder newBuilder(com.dycn.healthairport.faceplate.avro.FaceRec other) {
-    return new com.dycn.healthairport.faceplate.avro.FaceRec.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.FaceRec other) {
+    return new com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder(other);
   }
 
   /**
@@ -186,7 +186,7 @@ public class FaceRec extends org.apache.avro.specific.SpecificRecordBase impleme
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.FaceRec.Builder other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.x)) {
         this.x = data().deepCopy(fields()[0].schema(), other.x);
@@ -210,7 +210,7 @@ public class FaceRec extends org.apache.avro.specific.SpecificRecordBase impleme
      * Creates a Builder by copying an existing FaceRec instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.FaceRec other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.FaceRec other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.x)) {
         this.x = data().deepCopy(fields()[0].schema(), other.x);
@@ -245,7 +245,7 @@ public class FaceRec extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'x'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.FaceRec.Builder setX(int value) {
+    public com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder setX(int value) {
       validate(fields()[0], value);
       this.x = value;
       fieldSetFlags()[0] = true;
@@ -267,7 +267,7 @@ public class FaceRec extends org.apache.avro.specific.SpecificRecordBase impleme
       * 人脸rec左上角x坐标
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.FaceRec.Builder clearX() {
+    public com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder clearX() {
       fieldSetFlags()[0] = false;
       return this;
     }
@@ -287,7 +287,7 @@ public class FaceRec extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'y'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.FaceRec.Builder setY(int value) {
+    public com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder setY(int value) {
       validate(fields()[1], value);
       this.y = value;
       fieldSetFlags()[1] = true;
@@ -309,7 +309,7 @@ public class FaceRec extends org.apache.avro.specific.SpecificRecordBase impleme
       * 人脸rec左上角y坐标
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.FaceRec.Builder clearY() {
+    public com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder clearY() {
       fieldSetFlags()[1] = false;
       return this;
     }
@@ -329,7 +329,7 @@ public class FaceRec extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'w'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.FaceRec.Builder setW(int value) {
+    public com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder setW(int value) {
       validate(fields()[2], value);
       this.w = value;
       fieldSetFlags()[2] = true;
@@ -351,7 +351,7 @@ public class FaceRec extends org.apache.avro.specific.SpecificRecordBase impleme
       * 人脸rec宽度
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.FaceRec.Builder clearW() {
+    public com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder clearW() {
       fieldSetFlags()[2] = false;
       return this;
     }
@@ -371,7 +371,7 @@ public class FaceRec extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'h'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.FaceRec.Builder setH(int value) {
+    public com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder setH(int value) {
       validate(fields()[3], value);
       this.h = value;
       fieldSetFlags()[3] = true;
@@ -393,7 +393,7 @@ public class FaceRec extends org.apache.avro.specific.SpecificRecordBase impleme
       * 人脸rec高度
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.FaceRec.Builder clearH() {
+    public com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder clearH() {
       fieldSetFlags()[3] = false;
       return this;
     }

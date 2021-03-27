@@ -11,9 +11,9 @@ import org.apache.avro.specific.SpecificData;
 @org.apache.avro.specific.AvroGenerated
 public class FaceFeatureStructV2 extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = 4073505076259926675L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"FaceFeatureStructV2\",\"namespace\":\"com.dycn.healthairport.faceplate.avro\",\"fields\":[{\"name\":\"featureType\",\"type\":{\"type\":\"enum\",\"name\":\"FeatureTypeV2\",\"symbols\":[\"RGB_FEATURE\",\"INFRARED_FEATURE\"]}},{\"name\":\"faceFeature\",\"type\":[\"null\",\"bytes\"]}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"FaceFeatureStructV2\",\"namespace\":\"com.dycn.airportconsumer.faceplate.avro\",\"fields\":[{\"name\":\"featureType\",\"type\":{\"type\":\"enum\",\"name\":\"FeatureTypeV2\",\"symbols\":[\"RGB_FEATURE\",\"INFRARED_FEATURE\"]}},{\"name\":\"faceFeature\",\"type\":[\"null\",\"bytes\"]}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
-  @Deprecated public com.dycn.healthairport.faceplate.avro.FeatureTypeV2 featureType;
+  @Deprecated public com.dycn.airportconsumer.faceplate.avro.FeatureTypeV2 featureType;
   @Deprecated public java.nio.ByteBuffer faceFeature;
 
   /**
@@ -28,7 +28,7 @@ public class FaceFeatureStructV2 extends org.apache.avro.specific.SpecificRecord
    * @param featureType The new value for featureType
    * @param faceFeature The new value for faceFeature
    */
-  public FaceFeatureStructV2(com.dycn.healthairport.faceplate.avro.FeatureTypeV2 featureType, java.nio.ByteBuffer faceFeature) {
+  public FaceFeatureStructV2(com.dycn.airportconsumer.faceplate.avro.FeatureTypeV2 featureType, java.nio.ByteBuffer faceFeature) {
     this.featureType = featureType;
     this.faceFeature = faceFeature;
   }
@@ -47,7 +47,7 @@ public class FaceFeatureStructV2 extends org.apache.avro.specific.SpecificRecord
   @SuppressWarnings(value="unchecked")
   public void put(int field$, Object value$) {
     switch (field$) {
-    case 0: featureType = (com.dycn.healthairport.faceplate.avro.FeatureTypeV2)value$; break;
+    case 0: featureType = (com.dycn.airportconsumer.faceplate.avro.FeatureTypeV2)value$; break;
     case 1: faceFeature = (java.nio.ByteBuffer)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
@@ -57,7 +57,7 @@ public class FaceFeatureStructV2 extends org.apache.avro.specific.SpecificRecord
    * Gets the value of the 'featureType' field.
    * @return The value of the 'featureType' field.
    */
-  public com.dycn.healthairport.faceplate.avro.FeatureTypeV2 getFeatureType() {
+  public com.dycn.airportconsumer.faceplate.avro.FeatureTypeV2 getFeatureType() {
     return featureType;
   }
 
@@ -65,7 +65,7 @@ public class FaceFeatureStructV2 extends org.apache.avro.specific.SpecificRecord
    * Sets the value of the 'featureType' field.
    * @param value the value to set.
    */
-  public void setFeatureType(com.dycn.healthairport.faceplate.avro.FeatureTypeV2 value) {
+  public void setFeatureType(com.dycn.airportconsumer.faceplate.avro.FeatureTypeV2 value) {
     this.featureType = value;
   }
 
@@ -89,8 +89,8 @@ public class FaceFeatureStructV2 extends org.apache.avro.specific.SpecificRecord
    * Creates a new FaceFeatureStructV2 RecordBuilder.
    * @return A new FaceFeatureStructV2 RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2.Builder newBuilder() {
-    return new com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2.Builder();
+  public static com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2.Builder newBuilder() {
+    return new com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2.Builder();
   }
 
   /**
@@ -98,8 +98,8 @@ public class FaceFeatureStructV2 extends org.apache.avro.specific.SpecificRecord
    * @param other The existing builder to copy.
    * @return A new FaceFeatureStructV2 RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2.Builder newBuilder(com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2.Builder other) {
-    return new com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2.Builder other) {
+    return new com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2.Builder(other);
   }
 
   /**
@@ -107,8 +107,8 @@ public class FaceFeatureStructV2 extends org.apache.avro.specific.SpecificRecord
    * @param other The existing instance to copy.
    * @return A new FaceFeatureStructV2 RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2.Builder newBuilder(com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2 other) {
-    return new com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2 other) {
+    return new com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2.Builder(other);
   }
 
   /**
@@ -117,7 +117,7 @@ public class FaceFeatureStructV2 extends org.apache.avro.specific.SpecificRecord
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<FaceFeatureStructV2>
     implements org.apache.avro.data.RecordBuilder<FaceFeatureStructV2> {
 
-    private com.dycn.healthairport.faceplate.avro.FeatureTypeV2 featureType;
+    private com.dycn.airportconsumer.faceplate.avro.FeatureTypeV2 featureType;
     private java.nio.ByteBuffer faceFeature;
 
     /** Creates a new Builder */
@@ -129,7 +129,7 @@ public class FaceFeatureStructV2 extends org.apache.avro.specific.SpecificRecord
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2.Builder other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.featureType)) {
         this.featureType = data().deepCopy(fields()[0].schema(), other.featureType);
@@ -145,7 +145,7 @@ public class FaceFeatureStructV2 extends org.apache.avro.specific.SpecificRecord
      * Creates a Builder by copying an existing FaceFeatureStructV2 instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2 other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2 other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.featureType)) {
         this.featureType = data().deepCopy(fields()[0].schema(), other.featureType);
@@ -161,7 +161,7 @@ public class FaceFeatureStructV2 extends org.apache.avro.specific.SpecificRecord
       * Gets the value of the 'featureType' field.
       * @return The value.
       */
-    public com.dycn.healthairport.faceplate.avro.FeatureTypeV2 getFeatureType() {
+    public com.dycn.airportconsumer.faceplate.avro.FeatureTypeV2 getFeatureType() {
       return featureType;
     }
 
@@ -170,7 +170,7 @@ public class FaceFeatureStructV2 extends org.apache.avro.specific.SpecificRecord
       * @param value The value of 'featureType'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2.Builder setFeatureType(com.dycn.healthairport.faceplate.avro.FeatureTypeV2 value) {
+    public com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2.Builder setFeatureType(com.dycn.airportconsumer.faceplate.avro.FeatureTypeV2 value) {
       validate(fields()[0], value);
       this.featureType = value;
       fieldSetFlags()[0] = true;
@@ -190,7 +190,7 @@ public class FaceFeatureStructV2 extends org.apache.avro.specific.SpecificRecord
       * Clears the value of the 'featureType' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2.Builder clearFeatureType() {
+    public com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2.Builder clearFeatureType() {
       featureType = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -209,7 +209,7 @@ public class FaceFeatureStructV2 extends org.apache.avro.specific.SpecificRecord
       * @param value The value of 'faceFeature'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2.Builder setFaceFeature(java.nio.ByteBuffer value) {
+    public com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2.Builder setFaceFeature(java.nio.ByteBuffer value) {
       validate(fields()[1], value);
       this.faceFeature = value;
       fieldSetFlags()[1] = true;
@@ -229,7 +229,7 @@ public class FaceFeatureStructV2 extends org.apache.avro.specific.SpecificRecord
       * Clears the value of the 'faceFeature' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2.Builder clearFaceFeature() {
+    public com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2.Builder clearFaceFeature() {
       faceFeature = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -239,7 +239,7 @@ public class FaceFeatureStructV2 extends org.apache.avro.specific.SpecificRecord
     public FaceFeatureStructV2 build() {
       try {
         FaceFeatureStructV2 record = new FaceFeatureStructV2();
-        record.featureType = fieldSetFlags()[0] ? this.featureType : (com.dycn.healthairport.faceplate.avro.FeatureTypeV2) defaultValue(fields()[0]);
+        record.featureType = fieldSetFlags()[0] ? this.featureType : (com.dycn.airportconsumer.faceplate.avro.FeatureTypeV2) defaultValue(fields()[0]);
         record.faceFeature = fieldSetFlags()[1] ? this.faceFeature : (java.nio.ByteBuffer) defaultValue(fields()[1]);
         return record;
       } catch (Exception e) {

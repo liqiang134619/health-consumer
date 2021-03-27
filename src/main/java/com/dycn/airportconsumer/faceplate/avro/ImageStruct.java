@@ -11,9 +11,9 @@ import org.apache.avro.specific.SpecificData;
 @org.apache.avro.specific.AvroGenerated
 public class ImageStruct extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = 2454825165031314131L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ImageStruct\",\"namespace\":\"com.dycn.healthairport.faceplate.avro\",\"fields\":[{\"name\":\"imageType\",\"type\":{\"type\":\"enum\",\"name\":\"ImageType\",\"symbols\":[\"SCENE_IMAGE\",\"CAPTURED_IMAGE\",\"INFRARED_SCENE_IMAGE\",\"INFRARED_CAPTURED_IMAGE\"]}},{\"name\":\"image\",\"type\":[\"null\",\"bytes\"]}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ImageStruct\",\"namespace\":\"com.dycn.airportconsumer.faceplate.avro\",\"fields\":[{\"name\":\"imageType\",\"type\":{\"type\":\"enum\",\"name\":\"ImageType\",\"symbols\":[\"SCENE_IMAGE\",\"CAPTURED_IMAGE\",\"INFRARED_SCENE_IMAGE\",\"INFRARED_CAPTURED_IMAGE\"]}},{\"name\":\"image\",\"type\":[\"null\",\"bytes\"]}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
-  @Deprecated public com.dycn.healthairport.faceplate.avro.ImageType imageType;
+  @Deprecated public com.dycn.airportconsumer.faceplate.avro.ImageType imageType;
   @Deprecated public java.nio.ByteBuffer image;
 
   /**
@@ -28,7 +28,7 @@ public class ImageStruct extends org.apache.avro.specific.SpecificRecordBase imp
    * @param imageType The new value for imageType
    * @param image The new value for image
    */
-  public ImageStruct(com.dycn.healthairport.faceplate.avro.ImageType imageType, java.nio.ByteBuffer image) {
+  public ImageStruct(com.dycn.airportconsumer.faceplate.avro.ImageType imageType, java.nio.ByteBuffer image) {
     this.imageType = imageType;
     this.image = image;
   }
@@ -47,7 +47,7 @@ public class ImageStruct extends org.apache.avro.specific.SpecificRecordBase imp
   @SuppressWarnings(value="unchecked")
   public void put(int field$, Object value$) {
     switch (field$) {
-    case 0: imageType = (com.dycn.healthairport.faceplate.avro.ImageType)value$; break;
+    case 0: imageType = (com.dycn.airportconsumer.faceplate.avro.ImageType)value$; break;
     case 1: image = (java.nio.ByteBuffer)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
@@ -57,7 +57,7 @@ public class ImageStruct extends org.apache.avro.specific.SpecificRecordBase imp
    * Gets the value of the 'imageType' field.
    * @return The value of the 'imageType' field.
    */
-  public com.dycn.healthairport.faceplate.avro.ImageType getImageType() {
+  public com.dycn.airportconsumer.faceplate.avro.ImageType getImageType() {
     return imageType;
   }
 
@@ -65,7 +65,7 @@ public class ImageStruct extends org.apache.avro.specific.SpecificRecordBase imp
    * Sets the value of the 'imageType' field.
    * @param value the value to set.
    */
-  public void setImageType(com.dycn.healthairport.faceplate.avro.ImageType value) {
+  public void setImageType(com.dycn.airportconsumer.faceplate.avro.ImageType value) {
     this.imageType = value;
   }
 
@@ -89,8 +89,8 @@ public class ImageStruct extends org.apache.avro.specific.SpecificRecordBase imp
    * Creates a new ImageStruct RecordBuilder.
    * @return A new ImageStruct RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.ImageStruct.Builder newBuilder() {
-    return new com.dycn.healthairport.faceplate.avro.ImageStruct.Builder();
+  public static com.dycn.airportconsumer.faceplate.avro.ImageStruct.Builder newBuilder() {
+    return new com.dycn.airportconsumer.faceplate.avro.ImageStruct.Builder();
   }
 
   /**
@@ -98,8 +98,8 @@ public class ImageStruct extends org.apache.avro.specific.SpecificRecordBase imp
    * @param other The existing builder to copy.
    * @return A new ImageStruct RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.ImageStruct.Builder newBuilder(com.dycn.healthairport.faceplate.avro.ImageStruct.Builder other) {
-    return new com.dycn.healthairport.faceplate.avro.ImageStruct.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.ImageStruct.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.ImageStruct.Builder other) {
+    return new com.dycn.airportconsumer.faceplate.avro.ImageStruct.Builder(other);
   }
 
   /**
@@ -107,8 +107,8 @@ public class ImageStruct extends org.apache.avro.specific.SpecificRecordBase imp
    * @param other The existing instance to copy.
    * @return A new ImageStruct RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.ImageStruct.Builder newBuilder(com.dycn.healthairport.faceplate.avro.ImageStruct other) {
-    return new com.dycn.healthairport.faceplate.avro.ImageStruct.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.ImageStruct.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.ImageStruct other) {
+    return new com.dycn.airportconsumer.faceplate.avro.ImageStruct.Builder(other);
   }
 
   /**
@@ -117,7 +117,7 @@ public class ImageStruct extends org.apache.avro.specific.SpecificRecordBase imp
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<ImageStruct>
     implements org.apache.avro.data.RecordBuilder<ImageStruct> {
 
-    private com.dycn.healthairport.faceplate.avro.ImageType imageType;
+    private com.dycn.airportconsumer.faceplate.avro.ImageType imageType;
     private java.nio.ByteBuffer image;
 
     /** Creates a new Builder */
@@ -129,7 +129,7 @@ public class ImageStruct extends org.apache.avro.specific.SpecificRecordBase imp
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.ImageStruct.Builder other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.ImageStruct.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.imageType)) {
         this.imageType = data().deepCopy(fields()[0].schema(), other.imageType);
@@ -145,7 +145,7 @@ public class ImageStruct extends org.apache.avro.specific.SpecificRecordBase imp
      * Creates a Builder by copying an existing ImageStruct instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.ImageStruct other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.ImageStruct other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.imageType)) {
         this.imageType = data().deepCopy(fields()[0].schema(), other.imageType);
@@ -161,7 +161,7 @@ public class ImageStruct extends org.apache.avro.specific.SpecificRecordBase imp
       * Gets the value of the 'imageType' field.
       * @return The value.
       */
-    public com.dycn.healthairport.faceplate.avro.ImageType getImageType() {
+    public com.dycn.airportconsumer.faceplate.avro.ImageType getImageType() {
       return imageType;
     }
 
@@ -170,7 +170,7 @@ public class ImageStruct extends org.apache.avro.specific.SpecificRecordBase imp
       * @param value The value of 'imageType'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.ImageStruct.Builder setImageType(com.dycn.healthairport.faceplate.avro.ImageType value) {
+    public com.dycn.airportconsumer.faceplate.avro.ImageStruct.Builder setImageType(com.dycn.airportconsumer.faceplate.avro.ImageType value) {
       validate(fields()[0], value);
       this.imageType = value;
       fieldSetFlags()[0] = true;
@@ -190,7 +190,7 @@ public class ImageStruct extends org.apache.avro.specific.SpecificRecordBase imp
       * Clears the value of the 'imageType' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.ImageStruct.Builder clearImageType() {
+    public com.dycn.airportconsumer.faceplate.avro.ImageStruct.Builder clearImageType() {
       imageType = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -209,7 +209,7 @@ public class ImageStruct extends org.apache.avro.specific.SpecificRecordBase imp
       * @param value The value of 'image'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.ImageStruct.Builder setImage(java.nio.ByteBuffer value) {
+    public com.dycn.airportconsumer.faceplate.avro.ImageStruct.Builder setImage(java.nio.ByteBuffer value) {
       validate(fields()[1], value);
       this.image = value;
       fieldSetFlags()[1] = true;
@@ -229,7 +229,7 @@ public class ImageStruct extends org.apache.avro.specific.SpecificRecordBase imp
       * Clears the value of the 'image' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.ImageStruct.Builder clearImage() {
+    public com.dycn.airportconsumer.faceplate.avro.ImageStruct.Builder clearImage() {
       image = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -239,7 +239,7 @@ public class ImageStruct extends org.apache.avro.specific.SpecificRecordBase imp
     public ImageStruct build() {
       try {
         ImageStruct record = new ImageStruct();
-        record.imageType = fieldSetFlags()[0] ? this.imageType : (com.dycn.healthairport.faceplate.avro.ImageType) defaultValue(fields()[0]);
+        record.imageType = fieldSetFlags()[0] ? this.imageType : (com.dycn.airportconsumer.faceplate.avro.ImageType) defaultValue(fields()[0]);
         record.image = fieldSetFlags()[1] ? this.image : (java.nio.ByteBuffer) defaultValue(fields()[1]);
         return record;
       } catch (Exception e) {

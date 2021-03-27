@@ -11,10 +11,10 @@ import org.apache.avro.specific.SpecificData;
 @org.apache.avro.specific.AvroGenerated
 public class Operation extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = 4845739291555276402L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Operation\",\"namespace\":\"com.dycn.healthairport.faceplate.avro\",\"fields\":[{\"name\":\"operationType\",\"type\":{\"type\":\"enum\",\"name\":\"OperationType\",\"symbols\":[\"ADD\",\"REMOVE\",\"MODIFY\"]}},{\"name\":\"person\",\"type\":{\"type\":\"record\",\"name\":\"Person\",\"fields\":[{\"name\":\"id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"displayInfo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"displayPic\",\"type\":[\"null\",\"bytes\"]},{\"name\":\"picChecksum\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"faceFeatures\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"FaceFeatures\",\"fields\":[{\"name\":\"faceFeature\",\"type\":[\"null\",\"bytes\"]}]}}]},{\"name\":\"featureChecksum\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"otherInfoChecksum\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"cardNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"policy\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Policy\",\"fields\":[{\"name\":\"calendar\",\"type\":{\"type\":\"record\",\"name\":\"Calendar\",\"fields\":[{\"name\":\"startDate\",\"type\":\"long\"},{\"name\":\"restingDays\",\"type\":{\"type\":\"array\",\"items\":\"int\"}}]}},{\"name\":\"passTime\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"TimeSpan\",\"fields\":[{\"name\":\"startSeconds\",\"type\":\"int\"},{\"name\":\"span\",\"type\":\"int\"}]}}},{\"name\":\"passQuota\",\"type\":\"int\"},{\"name\":\"validTimestamp\",\"type\":\"long\"}]}}]}]}}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Operation\",\"namespace\":\"com.dycn.airportconsumer.faceplate.avro\",\"fields\":[{\"name\":\"operationType\",\"type\":{\"type\":\"enum\",\"name\":\"OperationType\",\"symbols\":[\"ADD\",\"REMOVE\",\"MODIFY\"]}},{\"name\":\"person\",\"type\":{\"type\":\"record\",\"name\":\"Person\",\"fields\":[{\"name\":\"id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"displayInfo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"displayPic\",\"type\":[\"null\",\"bytes\"]},{\"name\":\"picChecksum\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"faceFeatures\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"FaceFeatures\",\"fields\":[{\"name\":\"faceFeature\",\"type\":[\"null\",\"bytes\"]}]}}]},{\"name\":\"featureChecksum\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"otherInfoChecksum\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"cardNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"policy\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Policy\",\"fields\":[{\"name\":\"calendar\",\"type\":{\"type\":\"record\",\"name\":\"Calendar\",\"fields\":[{\"name\":\"startDate\",\"type\":\"long\"},{\"name\":\"restingDays\",\"type\":{\"type\":\"array\",\"items\":\"int\"}}]}},{\"name\":\"passTime\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"TimeSpan\",\"fields\":[{\"name\":\"startSeconds\",\"type\":\"int\"},{\"name\":\"span\",\"type\":\"int\"}]}}},{\"name\":\"passQuota\",\"type\":\"int\"},{\"name\":\"validTimestamp\",\"type\":\"long\"}]}}]}]}}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
-  @Deprecated public com.dycn.healthairport.faceplate.avro.OperationType operationType;
-  @Deprecated public com.dycn.healthairport.faceplate.avro.Person person;
+  @Deprecated public com.dycn.airportconsumer.faceplate.avro.OperationType operationType;
+  @Deprecated public com.dycn.airportconsumer.faceplate.avro.Person person;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -28,7 +28,7 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
    * @param operationType The new value for operationType
    * @param person The new value for person
    */
-  public Operation(com.dycn.healthairport.faceplate.avro.OperationType operationType, com.dycn.healthairport.faceplate.avro.Person person) {
+  public Operation(com.dycn.airportconsumer.faceplate.avro.OperationType operationType, com.dycn.airportconsumer.faceplate.avro.Person person) {
     this.operationType = operationType;
     this.person = person;
   }
@@ -47,8 +47,8 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
   @SuppressWarnings(value="unchecked")
   public void put(int field$, Object value$) {
     switch (field$) {
-    case 0: operationType = (com.dycn.healthairport.faceplate.avro.OperationType)value$; break;
-    case 1: person = (com.dycn.healthairport.faceplate.avro.Person)value$; break;
+    case 0: operationType = (com.dycn.airportconsumer.faceplate.avro.OperationType)value$; break;
+    case 1: person = (com.dycn.airportconsumer.faceplate.avro.Person)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -57,7 +57,7 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
    * Gets the value of the 'operationType' field.
    * @return The value of the 'operationType' field.
    */
-  public com.dycn.healthairport.faceplate.avro.OperationType getOperationType() {
+  public com.dycn.airportconsumer.faceplate.avro.OperationType getOperationType() {
     return operationType;
   }
 
@@ -65,7 +65,7 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
    * Sets the value of the 'operationType' field.
    * @param value the value to set.
    */
-  public void setOperationType(com.dycn.healthairport.faceplate.avro.OperationType value) {
+  public void setOperationType(com.dycn.airportconsumer.faceplate.avro.OperationType value) {
     this.operationType = value;
   }
 
@@ -73,7 +73,7 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
    * Gets the value of the 'person' field.
    * @return The value of the 'person' field.
    */
-  public com.dycn.healthairport.faceplate.avro.Person getPerson() {
+  public com.dycn.airportconsumer.faceplate.avro.Person getPerson() {
     return person;
   }
 
@@ -81,7 +81,7 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
    * Sets the value of the 'person' field.
    * @param value the value to set.
    */
-  public void setPerson(com.dycn.healthairport.faceplate.avro.Person value) {
+  public void setPerson(com.dycn.airportconsumer.faceplate.avro.Person value) {
     this.person = value;
   }
 
@@ -89,8 +89,8 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
    * Creates a new Operation RecordBuilder.
    * @return A new Operation RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.Operation.Builder newBuilder() {
-    return new com.dycn.healthairport.faceplate.avro.Operation.Builder();
+  public static com.dycn.airportconsumer.faceplate.avro.Operation.Builder newBuilder() {
+    return new com.dycn.airportconsumer.faceplate.avro.Operation.Builder();
   }
 
   /**
@@ -98,8 +98,8 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
    * @param other The existing builder to copy.
    * @return A new Operation RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.Operation.Builder newBuilder(com.dycn.healthairport.faceplate.avro.Operation.Builder other) {
-    return new com.dycn.healthairport.faceplate.avro.Operation.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.Operation.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.Operation.Builder other) {
+    return new com.dycn.airportconsumer.faceplate.avro.Operation.Builder(other);
   }
 
   /**
@@ -107,8 +107,8 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
    * @param other The existing instance to copy.
    * @return A new Operation RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.Operation.Builder newBuilder(com.dycn.healthairport.faceplate.avro.Operation other) {
-    return new com.dycn.healthairport.faceplate.avro.Operation.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.Operation.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.Operation other) {
+    return new com.dycn.airportconsumer.faceplate.avro.Operation.Builder(other);
   }
 
   /**
@@ -117,9 +117,9 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<Operation>
     implements org.apache.avro.data.RecordBuilder<Operation> {
 
-    private com.dycn.healthairport.faceplate.avro.OperationType operationType;
-    private com.dycn.healthairport.faceplate.avro.Person person;
-    private com.dycn.healthairport.faceplate.avro.Person.Builder personBuilder;
+    private com.dycn.airportconsumer.faceplate.avro.OperationType operationType;
+    private com.dycn.airportconsumer.faceplate.avro.Person person;
+    private com.dycn.airportconsumer.faceplate.avro.Person.Builder personBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -130,7 +130,7 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.Operation.Builder other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.Operation.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.operationType)) {
         this.operationType = data().deepCopy(fields()[0].schema(), other.operationType);
@@ -141,7 +141,7 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
         fieldSetFlags()[1] = true;
       }
       if (other.hasPersonBuilder()) {
-        this.personBuilder = com.dycn.healthairport.faceplate.avro.Person.newBuilder(other.getPersonBuilder());
+        this.personBuilder = com.dycn.airportconsumer.faceplate.avro.Person.newBuilder(other.getPersonBuilder());
       }
     }
 
@@ -149,7 +149,7 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
      * Creates a Builder by copying an existing Operation instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.Operation other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.Operation other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.operationType)) {
         this.operationType = data().deepCopy(fields()[0].schema(), other.operationType);
@@ -166,7 +166,7 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
       * Gets the value of the 'operationType' field.
       * @return The value.
       */
-    public com.dycn.healthairport.faceplate.avro.OperationType getOperationType() {
+    public com.dycn.airportconsumer.faceplate.avro.OperationType getOperationType() {
       return operationType;
     }
 
@@ -175,7 +175,7 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
       * @param value The value of 'operationType'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Operation.Builder setOperationType(com.dycn.healthairport.faceplate.avro.OperationType value) {
+    public com.dycn.airportconsumer.faceplate.avro.Operation.Builder setOperationType(com.dycn.airportconsumer.faceplate.avro.OperationType value) {
       validate(fields()[0], value);
       this.operationType = value;
       fieldSetFlags()[0] = true;
@@ -195,7 +195,7 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
       * Clears the value of the 'operationType' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Operation.Builder clearOperationType() {
+    public com.dycn.airportconsumer.faceplate.avro.Operation.Builder clearOperationType() {
       operationType = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -205,7 +205,7 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
       * Gets the value of the 'person' field.
       * @return The value.
       */
-    public com.dycn.healthairport.faceplate.avro.Person getPerson() {
+    public com.dycn.airportconsumer.faceplate.avro.Person getPerson() {
       return person;
     }
 
@@ -214,7 +214,7 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
       * @param value The value of 'person'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Operation.Builder setPerson(com.dycn.healthairport.faceplate.avro.Person value) {
+    public com.dycn.airportconsumer.faceplate.avro.Operation.Builder setPerson(com.dycn.airportconsumer.faceplate.avro.Person value) {
       validate(fields()[1], value);
       this.personBuilder = null;
       this.person = value;
@@ -234,12 +234,12 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
      * Gets the Builder instance for the 'person' field and creates one if it doesn't exist yet.
      * @return This builder.
      */
-    public com.dycn.healthairport.faceplate.avro.Person.Builder getPersonBuilder() {
+    public com.dycn.airportconsumer.faceplate.avro.Person.Builder getPersonBuilder() {
       if (personBuilder == null) {
         if (hasPerson()) {
-          setPersonBuilder(com.dycn.healthairport.faceplate.avro.Person.newBuilder(person));
+          setPersonBuilder(com.dycn.airportconsumer.faceplate.avro.Person.newBuilder(person));
         } else {
-          setPersonBuilder(com.dycn.healthairport.faceplate.avro.Person.newBuilder());
+          setPersonBuilder(com.dycn.airportconsumer.faceplate.avro.Person.newBuilder());
         }
       }
       return personBuilder;
@@ -250,7 +250,7 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
      * @param value The builder instance that must be set.
      * @return This builder.
      */
-    public com.dycn.healthairport.faceplate.avro.Operation.Builder setPersonBuilder(com.dycn.healthairport.faceplate.avro.Person.Builder value) {
+    public com.dycn.airportconsumer.faceplate.avro.Operation.Builder setPersonBuilder(com.dycn.airportconsumer.faceplate.avro.Person.Builder value) {
       clearPerson();
       personBuilder = value;
       return this;
@@ -268,7 +268,7 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
       * Clears the value of the 'person' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.Operation.Builder clearPerson() {
+    public com.dycn.airportconsumer.faceplate.avro.Operation.Builder clearPerson() {
       person = null;
       personBuilder = null;
       fieldSetFlags()[1] = false;
@@ -279,11 +279,11 @@ public class Operation extends org.apache.avro.specific.SpecificRecordBase imple
     public Operation build() {
       try {
         Operation record = new Operation();
-        record.operationType = fieldSetFlags()[0] ? this.operationType : (com.dycn.healthairport.faceplate.avro.OperationType) defaultValue(fields()[0]);
+        record.operationType = fieldSetFlags()[0] ? this.operationType : (com.dycn.airportconsumer.faceplate.avro.OperationType) defaultValue(fields()[0]);
         if (personBuilder != null) {
           record.person = this.personBuilder.build();
         } else {
-          record.person = fieldSetFlags()[1] ? this.person : (com.dycn.healthairport.faceplate.avro.Person) defaultValue(fields()[1]);
+          record.person = fieldSetFlags()[1] ? this.person : (com.dycn.airportconsumer.faceplate.avro.Person) defaultValue(fields()[1]);
         }
         return record;
       } catch (Exception e) {

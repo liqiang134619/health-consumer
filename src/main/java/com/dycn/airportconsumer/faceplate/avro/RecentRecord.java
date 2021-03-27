@@ -11,7 +11,7 @@ import org.apache.avro.specific.SpecificData;
 @org.apache.avro.specific.AvroGenerated
 public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = 9101758698760487142L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"RecentRecord\",\"namespace\":\"com.dycn.healthairport.faceplate.avro\",\"fields\":[{\"name\":\"ID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"记录id\"},{\"name\":\"deviceId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"设备id\"},{\"name\":\"personId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"人像id\"},{\"name\":\"similarity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"人像比对的相似度\"},{\"name\":\"feature\",\"type\":[\"null\",\"bytes\"],\"doc\":\"特征数据\"},{\"name\":\"isFaceMask\",\"type\":\"boolean\",\"doc\":\"是否戴口罩\"},{\"name\":\"createDateTime\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"记录创建时间戳\"},{\"name\":\"lastUpdateDateTime\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"记录更新时间戳\"},{\"name\":\"pic\",\"type\":[\"null\",\"bytes\"]},{\"name\":\"faceRec\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"FaceRec\",\"doc\":\"图片中的人脸框rec\",\"fields\":[{\"name\":\"x\",\"type\":\"int\",\"doc\":\"人脸rec左上角x坐标\"},{\"name\":\"y\",\"type\":\"int\",\"doc\":\"人脸rec左上角y坐标\"},{\"name\":\"w\",\"type\":\"int\",\"doc\":\"人脸rec宽度\"},{\"name\":\"h\",\"type\":\"int\",\"doc\":\"人脸rec高度\"}]}],\"doc\":\"图片中的人脸框rec\"},{\"name\":\"picQuality\",\"type\":\"float\",\"doc\":\"图像质量\"},{\"name\":\"isReady\",\"type\":\"boolean\",\"doc\":\"是否可用\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"RecentRecord\",\"namespace\":\"com.dycn.airportconsumer.faceplate.avro\",\"fields\":[{\"name\":\"ID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"记录id\"},{\"name\":\"deviceId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"设备id\"},{\"name\":\"personId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"人像id\"},{\"name\":\"similarity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"人像比对的相似度\"},{\"name\":\"feature\",\"type\":[\"null\",\"bytes\"],\"doc\":\"特征数据\"},{\"name\":\"isFaceMask\",\"type\":\"boolean\",\"doc\":\"是否戴口罩\"},{\"name\":\"createDateTime\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"记录创建时间戳\"},{\"name\":\"lastUpdateDateTime\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"doc\":\"记录更新时间戳\"},{\"name\":\"pic\",\"type\":[\"null\",\"bytes\"]},{\"name\":\"faceRec\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"FaceRec\",\"doc\":\"图片中的人脸框rec\",\"fields\":[{\"name\":\"x\",\"type\":\"int\",\"doc\":\"人脸rec左上角x坐标\"},{\"name\":\"y\",\"type\":\"int\",\"doc\":\"人脸rec左上角y坐标\"},{\"name\":\"w\",\"type\":\"int\",\"doc\":\"人脸rec宽度\"},{\"name\":\"h\",\"type\":\"int\",\"doc\":\"人脸rec高度\"}]}],\"doc\":\"图片中的人脸框rec\"},{\"name\":\"picQuality\",\"type\":\"float\",\"doc\":\"图像质量\"},{\"name\":\"isReady\",\"type\":\"boolean\",\"doc\":\"是否可用\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   /** 记录id */
   @Deprecated public String ID;
@@ -31,7 +31,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
   @Deprecated public String lastUpdateDateTime;
   @Deprecated public java.nio.ByteBuffer pic;
   /** 图片中的人脸框rec */
-  @Deprecated public com.dycn.healthairport.faceplate.avro.FaceRec faceRec;
+  @Deprecated public com.dycn.airportconsumer.faceplate.avro.FaceRec faceRec;
   /** 图像质量 */
   @Deprecated public float picQuality;
   /** 是否可用 */
@@ -59,7 +59,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
    * @param picQuality 图像质量
    * @param isReady 是否可用
    */
-  public RecentRecord(String ID, String deviceId, String personId, String similarity, java.nio.ByteBuffer feature, Boolean isFaceMask, String createDateTime, String lastUpdateDateTime, java.nio.ByteBuffer pic, com.dycn.healthairport.faceplate.avro.FaceRec faceRec, Float picQuality, Boolean isReady) {
+  public RecentRecord(String ID, String deviceId, String personId, String similarity, java.nio.ByteBuffer feature, Boolean isFaceMask, String createDateTime, String lastUpdateDateTime, java.nio.ByteBuffer pic, com.dycn.airportconsumer.faceplate.avro.FaceRec faceRec, Float picQuality, Boolean isReady) {
     this.ID = ID;
     this.deviceId = deviceId;
     this.personId = personId;
@@ -107,7 +107,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
     case 6: createDateTime = (String)value$; break;
     case 7: lastUpdateDateTime = (String)value$; break;
     case 8: pic = (java.nio.ByteBuffer)value$; break;
-    case 9: faceRec = (com.dycn.healthairport.faceplate.avro.FaceRec)value$; break;
+    case 9: faceRec = (com.dycn.airportconsumer.faceplate.avro.FaceRec)value$; break;
     case 10: picQuality = (Float)value$; break;
     case 11: isReady = (Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
@@ -270,7 +270,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
    * Gets the value of the 'faceRec' field.
    * @return 图片中的人脸框rec
    */
-  public com.dycn.healthairport.faceplate.avro.FaceRec getFaceRec() {
+  public com.dycn.airportconsumer.faceplate.avro.FaceRec getFaceRec() {
     return faceRec;
   }
 
@@ -279,7 +279,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
    * 图片中的人脸框rec
    * @param value the value to set.
    */
-  public void setFaceRec(com.dycn.healthairport.faceplate.avro.FaceRec value) {
+  public void setFaceRec(com.dycn.airportconsumer.faceplate.avro.FaceRec value) {
     this.faceRec = value;
   }
 
@@ -321,8 +321,8 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
    * Creates a new RecentRecord RecordBuilder.
    * @return A new RecentRecord RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.RecentRecord.Builder newBuilder() {
-    return new com.dycn.healthairport.faceplate.avro.RecentRecord.Builder();
+  public static com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder newBuilder() {
+    return new com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder();
   }
 
   /**
@@ -330,8 +330,8 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
    * @param other The existing builder to copy.
    * @return A new RecentRecord RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.RecentRecord.Builder newBuilder(com.dycn.healthairport.faceplate.avro.RecentRecord.Builder other) {
-    return new com.dycn.healthairport.faceplate.avro.RecentRecord.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder other) {
+    return new com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder(other);
   }
 
   /**
@@ -339,8 +339,8 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
    * @param other The existing instance to copy.
    * @return A new RecentRecord RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.RecentRecord.Builder newBuilder(com.dycn.healthairport.faceplate.avro.RecentRecord other) {
-    return new com.dycn.healthairport.faceplate.avro.RecentRecord.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.RecentRecord other) {
+    return new com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder(other);
   }
 
   /**
@@ -367,8 +367,8 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
     private String lastUpdateDateTime;
     private java.nio.ByteBuffer pic;
     /** 图片中的人脸框rec */
-    private com.dycn.healthairport.faceplate.avro.FaceRec faceRec;
-    private com.dycn.healthairport.faceplate.avro.FaceRec.Builder faceRecBuilder;
+    private com.dycn.airportconsumer.faceplate.avro.FaceRec faceRec;
+    private com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder faceRecBuilder;
     /** 图像质量 */
     private float picQuality;
     /** 是否可用 */
@@ -383,7 +383,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.RecentRecord.Builder other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.ID)) {
         this.ID = data().deepCopy(fields()[0].schema(), other.ID);
@@ -426,7 +426,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
         fieldSetFlags()[9] = true;
       }
       if (other.hasFaceRecBuilder()) {
-        this.faceRecBuilder = com.dycn.healthairport.faceplate.avro.FaceRec.newBuilder(other.getFaceRecBuilder());
+        this.faceRecBuilder = com.dycn.airportconsumer.faceplate.avro.FaceRec.newBuilder(other.getFaceRecBuilder());
       }
       if (isValidValue(fields()[10], other.picQuality)) {
         this.picQuality = data().deepCopy(fields()[10].schema(), other.picQuality);
@@ -442,7 +442,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
      * Creates a Builder by copying an existing RecentRecord instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.RecentRecord other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.RecentRecord other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.ID)) {
         this.ID = data().deepCopy(fields()[0].schema(), other.ID);
@@ -510,7 +510,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'ID'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder setID(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder setID(String value) {
       validate(fields()[0], value);
       this.ID = value;
       fieldSetFlags()[0] = true;
@@ -532,7 +532,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * 记录id
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder clearID() {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder clearID() {
       ID = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -553,7 +553,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'deviceId'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder setDeviceId(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder setDeviceId(String value) {
       validate(fields()[1], value);
       this.deviceId = value;
       fieldSetFlags()[1] = true;
@@ -575,7 +575,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * 设备id
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder clearDeviceId() {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder clearDeviceId() {
       deviceId = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -596,7 +596,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'personId'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder setPersonId(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder setPersonId(String value) {
       validate(fields()[2], value);
       this.personId = value;
       fieldSetFlags()[2] = true;
@@ -618,7 +618,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * 人像id
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder clearPersonId() {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder clearPersonId() {
       personId = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -639,7 +639,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'similarity'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder setSimilarity(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder setSimilarity(String value) {
       validate(fields()[3], value);
       this.similarity = value;
       fieldSetFlags()[3] = true;
@@ -661,7 +661,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * 人像比对的相似度
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder clearSimilarity() {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder clearSimilarity() {
       similarity = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -682,7 +682,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'feature'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder setFeature(java.nio.ByteBuffer value) {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder setFeature(java.nio.ByteBuffer value) {
       validate(fields()[4], value);
       this.feature = value;
       fieldSetFlags()[4] = true;
@@ -704,7 +704,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * 特征数据
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder clearFeature() {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder clearFeature() {
       feature = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -725,7 +725,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'isFaceMask'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder setIsFaceMask(boolean value) {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder setIsFaceMask(boolean value) {
       validate(fields()[5], value);
       this.isFaceMask = value;
       fieldSetFlags()[5] = true;
@@ -747,7 +747,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * 是否戴口罩
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder clearIsFaceMask() {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder clearIsFaceMask() {
       fieldSetFlags()[5] = false;
       return this;
     }
@@ -767,7 +767,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'createDateTime'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder setCreateDateTime(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder setCreateDateTime(String value) {
       validate(fields()[6], value);
       this.createDateTime = value;
       fieldSetFlags()[6] = true;
@@ -789,7 +789,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * 记录创建时间戳
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder clearCreateDateTime() {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder clearCreateDateTime() {
       createDateTime = null;
       fieldSetFlags()[6] = false;
       return this;
@@ -810,7 +810,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'lastUpdateDateTime'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder setLastUpdateDateTime(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder setLastUpdateDateTime(String value) {
       validate(fields()[7], value);
       this.lastUpdateDateTime = value;
       fieldSetFlags()[7] = true;
@@ -832,7 +832,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * 记录更新时间戳
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder clearLastUpdateDateTime() {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder clearLastUpdateDateTime() {
       lastUpdateDateTime = null;
       fieldSetFlags()[7] = false;
       return this;
@@ -851,7 +851,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'pic'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder setPic(java.nio.ByteBuffer value) {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder setPic(java.nio.ByteBuffer value) {
       validate(fields()[8], value);
       this.pic = value;
       fieldSetFlags()[8] = true;
@@ -871,7 +871,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'pic' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder clearPic() {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder clearPic() {
       pic = null;
       fieldSetFlags()[8] = false;
       return this;
@@ -882,7 +882,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * 图片中的人脸框rec
       * @return The value.
       */
-    public com.dycn.healthairport.faceplate.avro.FaceRec getFaceRec() {
+    public com.dycn.airportconsumer.faceplate.avro.FaceRec getFaceRec() {
       return faceRec;
     }
 
@@ -892,7 +892,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'faceRec'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder setFaceRec(com.dycn.healthairport.faceplate.avro.FaceRec value) {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder setFaceRec(com.dycn.airportconsumer.faceplate.avro.FaceRec value) {
       validate(fields()[9], value);
       this.faceRecBuilder = null;
       this.faceRec = value;
@@ -914,12 +914,12 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
      * 图片中的人脸框rec
      * @return This builder.
      */
-    public com.dycn.healthairport.faceplate.avro.FaceRec.Builder getFaceRecBuilder() {
+    public com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder getFaceRecBuilder() {
       if (faceRecBuilder == null) {
         if (hasFaceRec()) {
-          setFaceRecBuilder(com.dycn.healthairport.faceplate.avro.FaceRec.newBuilder(faceRec));
+          setFaceRecBuilder(com.dycn.airportconsumer.faceplate.avro.FaceRec.newBuilder(faceRec));
         } else {
-          setFaceRecBuilder(com.dycn.healthairport.faceplate.avro.FaceRec.newBuilder());
+          setFaceRecBuilder(com.dycn.airportconsumer.faceplate.avro.FaceRec.newBuilder());
         }
       }
       return faceRecBuilder;
@@ -931,7 +931,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
      * @param value The builder instance that must be set.
      * @return This builder.
      */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder setFaceRecBuilder(com.dycn.healthairport.faceplate.avro.FaceRec.Builder value) {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder setFaceRecBuilder(com.dycn.airportconsumer.faceplate.avro.FaceRec.Builder value) {
       clearFaceRec();
       faceRecBuilder = value;
       return this;
@@ -951,7 +951,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * 图片中的人脸框rec
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder clearFaceRec() {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder clearFaceRec() {
       faceRec = null;
       faceRecBuilder = null;
       fieldSetFlags()[9] = false;
@@ -973,7 +973,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'picQuality'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder setPicQuality(float value) {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder setPicQuality(float value) {
       validate(fields()[10], value);
       this.picQuality = value;
       fieldSetFlags()[10] = true;
@@ -995,7 +995,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * 图像质量
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder clearPicQuality() {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder clearPicQuality() {
       fieldSetFlags()[10] = false;
       return this;
     }
@@ -1015,7 +1015,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'isReady'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder setIsReady(boolean value) {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder setIsReady(boolean value) {
       validate(fields()[11], value);
       this.isReady = value;
       fieldSetFlags()[11] = true;
@@ -1037,7 +1037,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
       * 是否可用
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.RecentRecord.Builder clearIsReady() {
+    public com.dycn.airportconsumer.faceplate.avro.RecentRecord.Builder clearIsReady() {
       fieldSetFlags()[11] = false;
       return this;
     }
@@ -1058,7 +1058,7 @@ public class RecentRecord extends org.apache.avro.specific.SpecificRecordBase im
         if (faceRecBuilder != null) {
           record.faceRec = this.faceRecBuilder.build();
         } else {
-          record.faceRec = fieldSetFlags()[9] ? this.faceRec : (com.dycn.healthairport.faceplate.avro.FaceRec) defaultValue(fields()[9]);
+          record.faceRec = fieldSetFlags()[9] ? this.faceRec : (com.dycn.airportconsumer.faceplate.avro.FaceRec) defaultValue(fields()[9]);
         }
         record.picQuality = fieldSetFlags()[10] ? this.picQuality : (Float) defaultValue(fields()[10]);
         record.isReady = fieldSetFlags()[11] ? this.isReady : (Boolean) defaultValue(fields()[11]);

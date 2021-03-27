@@ -11,7 +11,7 @@ import org.apache.avro.specific.SpecificData;
 @org.apache.avro.specific.AvroGenerated
 public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = -5577000180846823304L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"AccessRecordV2\",\"namespace\":\"com.dycn.healthairport.faceplate.avro\",\"fields\":[{\"name\":\"devId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"timestamp\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"personId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"featureIndex\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"featureMd5\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"similarity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"imagesList\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ImageStructV2\",\"fields\":[{\"name\":\"imageType\",\"type\":{\"type\":\"enum\",\"name\":\"ImageTypeV2\",\"symbols\":[\"SCENE_IMAGE\",\"CAPTURED_IMAGE\",\"INFRARED_SCENE_IMAGE\",\"INFRARED_CAPTURED_IMAGE\"]}},{\"name\":\"image\",\"type\":[\"null\",\"bytes\"]}]}}},{\"name\":\"featuresList\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"FaceFeatureStructV2\",\"fields\":[{\"name\":\"featureType\",\"type\":{\"type\":\"enum\",\"name\":\"FeatureTypeV2\",\"symbols\":[\"RGB_FEATURE\",\"INFRARED_FEATURE\"]}},{\"name\":\"faceFeature\",\"type\":[\"null\",\"bytes\"]}]}}},{\"name\":\"cardNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"passed\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"password\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":\"\"},{\"name\":\"verificationType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":\"\"},{\"name\":\"QRCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":\"\"},{\"name\":\"meta\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"{}\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"AccessRecordV2\",\"namespace\":\"com.dycn.airportconsumer.faceplate.avro\",\"fields\":[{\"name\":\"devId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"timestamp\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"personId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"featureIndex\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"featureMd5\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"similarity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"imagesList\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ImageStructV2\",\"fields\":[{\"name\":\"imageType\",\"type\":{\"type\":\"enum\",\"name\":\"ImageTypeV2\",\"symbols\":[\"SCENE_IMAGE\",\"CAPTURED_IMAGE\",\"INFRARED_SCENE_IMAGE\",\"INFRARED_CAPTURED_IMAGE\"]}},{\"name\":\"image\",\"type\":[\"null\",\"bytes\"]}]}}},{\"name\":\"featuresList\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"FaceFeatureStructV2\",\"fields\":[{\"name\":\"featureType\",\"type\":{\"type\":\"enum\",\"name\":\"FeatureTypeV2\",\"symbols\":[\"RGB_FEATURE\",\"INFRARED_FEATURE\"]}},{\"name\":\"faceFeature\",\"type\":[\"null\",\"bytes\"]}]}}},{\"name\":\"cardNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"passed\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"password\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":\"\"},{\"name\":\"verificationType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":\"\"},{\"name\":\"QRCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":\"\"},{\"name\":\"meta\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"{}\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public String devId;
   @Deprecated public String timestamp;
@@ -19,8 +19,8 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
   @Deprecated public String featureIndex;
   @Deprecated public String featureMd5;
   @Deprecated public String similarity;
-  @Deprecated public java.util.List<com.dycn.healthairport.faceplate.avro.ImageStructV2> imagesList;
-  @Deprecated public java.util.List<com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2> featuresList;
+  @Deprecated public java.util.List<com.dycn.airportconsumer.faceplate.avro.ImageStructV2> imagesList;
+  @Deprecated public java.util.List<com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2> featuresList;
   @Deprecated public String cardNumber;
   @Deprecated public Boolean passed;
   @Deprecated public String password;
@@ -52,7 +52,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
    * @param QRCode The new value for QRCode
    * @param meta The new value for meta
    */
-  public AccessRecordV2(String devId, String timestamp, String personId, String featureIndex, String featureMd5, String similarity, java.util.List<com.dycn.healthairport.faceplate.avro.ImageStructV2> imagesList, java.util.List<com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2> featuresList, String cardNumber, Boolean passed, String password, String verificationType, String QRCode, String meta) {
+  public AccessRecordV2(String devId, String timestamp, String personId, String featureIndex, String featureMd5, String similarity, java.util.List<com.dycn.airportconsumer.faceplate.avro.ImageStructV2> imagesList, java.util.List<com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2> featuresList, String cardNumber, Boolean passed, String password, String verificationType, String QRCode, String meta) {
     this.devId = devId;
     this.timestamp = timestamp;
     this.personId = personId;
@@ -101,8 +101,8 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
     case 3: featureIndex = (String)value$; break;
     case 4: featureMd5 = (String)value$; break;
     case 5: similarity = (String)value$; break;
-    case 6: imagesList = (java.util.List<com.dycn.healthairport.faceplate.avro.ImageStructV2>)value$; break;
-    case 7: featuresList = (java.util.List<com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2>)value$; break;
+    case 6: imagesList = (java.util.List<com.dycn.airportconsumer.faceplate.avro.ImageStructV2>)value$; break;
+    case 7: featuresList = (java.util.List<com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2>)value$; break;
     case 8: cardNumber = (String)value$; break;
     case 9: passed = (Boolean)value$; break;
     case 10: password = (String)value$; break;
@@ -213,7 +213,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
    * Gets the value of the 'imagesList' field.
    * @return The value of the 'imagesList' field.
    */
-  public java.util.List<com.dycn.healthairport.faceplate.avro.ImageStructV2> getImagesList() {
+  public java.util.List<com.dycn.airportconsumer.faceplate.avro.ImageStructV2> getImagesList() {
     return imagesList;
   }
 
@@ -221,7 +221,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
    * Sets the value of the 'imagesList' field.
    * @param value the value to set.
    */
-  public void setImagesList(java.util.List<com.dycn.healthairport.faceplate.avro.ImageStructV2> value) {
+  public void setImagesList(java.util.List<com.dycn.airportconsumer.faceplate.avro.ImageStructV2> value) {
     this.imagesList = value;
   }
 
@@ -229,7 +229,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
    * Gets the value of the 'featuresList' field.
    * @return The value of the 'featuresList' field.
    */
-  public java.util.List<com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2> getFeaturesList() {
+  public java.util.List<com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2> getFeaturesList() {
     return featuresList;
   }
 
@@ -237,7 +237,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
    * Sets the value of the 'featuresList' field.
    * @param value the value to set.
    */
-  public void setFeaturesList(java.util.List<com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2> value) {
+  public void setFeaturesList(java.util.List<com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2> value) {
     this.featuresList = value;
   }
 
@@ -341,8 +341,8 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
    * Creates a new AccessRecordV2 RecordBuilder.
    * @return A new AccessRecordV2 RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder newBuilder() {
-    return new com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder();
+  public static com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder newBuilder() {
+    return new com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder();
   }
 
   /**
@@ -350,8 +350,8 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
    * @param other The existing builder to copy.
    * @return A new AccessRecordV2 RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder newBuilder(com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder other) {
-    return new com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder other) {
+    return new com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder(other);
   }
 
   /**
@@ -359,8 +359,8 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
    * @param other The existing instance to copy.
    * @return A new AccessRecordV2 RecordBuilder
    */
-  public static com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder newBuilder(com.dycn.healthairport.faceplate.avro.AccessRecordV2 other) {
-    return new com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder(other);
+  public static com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder newBuilder(com.dycn.airportconsumer.faceplate.avro.AccessRecordV2 other) {
+    return new com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder(other);
   }
 
   /**
@@ -375,8 +375,8 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
     private String featureIndex;
     private String featureMd5;
     private String similarity;
-    private java.util.List<com.dycn.healthairport.faceplate.avro.ImageStructV2> imagesList;
-    private java.util.List<com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2> featuresList;
+    private java.util.List<com.dycn.airportconsumer.faceplate.avro.ImageStructV2> imagesList;
+    private java.util.List<com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2> featuresList;
     private String cardNumber;
     private Boolean passed;
     private String password;
@@ -393,7 +393,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.devId)) {
         this.devId = data().deepCopy(fields()[0].schema(), other.devId);
@@ -457,7 +457,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
      * Creates a Builder by copying an existing AccessRecordV2 instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.dycn.healthairport.faceplate.avro.AccessRecordV2 other) {
+    private Builder(com.dycn.airportconsumer.faceplate.avro.AccessRecordV2 other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.devId)) {
         this.devId = data().deepCopy(fields()[0].schema(), other.devId);
@@ -530,7 +530,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'devId'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder setDevId(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder setDevId(String value) {
       validate(fields()[0], value);
       this.devId = value;
       fieldSetFlags()[0] = true;
@@ -550,7 +550,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'devId' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder clearDevId() {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder clearDevId() {
       devId = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -569,7 +569,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'timestamp'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder setTimestamp(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder setTimestamp(String value) {
       validate(fields()[1], value);
       this.timestamp = value;
       fieldSetFlags()[1] = true;
@@ -589,7 +589,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'timestamp' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder clearTimestamp() {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder clearTimestamp() {
       timestamp = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -608,7 +608,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'personId'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder setPersonId(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder setPersonId(String value) {
       validate(fields()[2], value);
       this.personId = value;
       fieldSetFlags()[2] = true;
@@ -628,7 +628,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'personId' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder clearPersonId() {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder clearPersonId() {
       personId = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -647,7 +647,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'featureIndex'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder setFeatureIndex(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder setFeatureIndex(String value) {
       validate(fields()[3], value);
       this.featureIndex = value;
       fieldSetFlags()[3] = true;
@@ -667,7 +667,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'featureIndex' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder clearFeatureIndex() {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder clearFeatureIndex() {
       featureIndex = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -686,7 +686,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'featureMd5'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder setFeatureMd5(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder setFeatureMd5(String value) {
       validate(fields()[4], value);
       this.featureMd5 = value;
       fieldSetFlags()[4] = true;
@@ -706,7 +706,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'featureMd5' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder clearFeatureMd5() {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder clearFeatureMd5() {
       featureMd5 = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -725,7 +725,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'similarity'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder setSimilarity(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder setSimilarity(String value) {
       validate(fields()[5], value);
       this.similarity = value;
       fieldSetFlags()[5] = true;
@@ -745,7 +745,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'similarity' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder clearSimilarity() {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder clearSimilarity() {
       similarity = null;
       fieldSetFlags()[5] = false;
       return this;
@@ -755,7 +755,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * Gets the value of the 'imagesList' field.
       * @return The value.
       */
-    public java.util.List<com.dycn.healthairport.faceplate.avro.ImageStructV2> getImagesList() {
+    public java.util.List<com.dycn.airportconsumer.faceplate.avro.ImageStructV2> getImagesList() {
       return imagesList;
     }
 
@@ -764,7 +764,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'imagesList'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder setImagesList(java.util.List<com.dycn.healthairport.faceplate.avro.ImageStructV2> value) {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder setImagesList(java.util.List<com.dycn.airportconsumer.faceplate.avro.ImageStructV2> value) {
       validate(fields()[6], value);
       this.imagesList = value;
       fieldSetFlags()[6] = true;
@@ -784,7 +784,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'imagesList' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder clearImagesList() {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder clearImagesList() {
       imagesList = null;
       fieldSetFlags()[6] = false;
       return this;
@@ -794,7 +794,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * Gets the value of the 'featuresList' field.
       * @return The value.
       */
-    public java.util.List<com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2> getFeaturesList() {
+    public java.util.List<com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2> getFeaturesList() {
       return featuresList;
     }
 
@@ -803,7 +803,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'featuresList'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder setFeaturesList(java.util.List<com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2> value) {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder setFeaturesList(java.util.List<com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2> value) {
       validate(fields()[7], value);
       this.featuresList = value;
       fieldSetFlags()[7] = true;
@@ -823,7 +823,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'featuresList' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder clearFeaturesList() {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder clearFeaturesList() {
       featuresList = null;
       fieldSetFlags()[7] = false;
       return this;
@@ -842,7 +842,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'cardNumber'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder setCardNumber(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder setCardNumber(String value) {
       validate(fields()[8], value);
       this.cardNumber = value;
       fieldSetFlags()[8] = true;
@@ -862,7 +862,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'cardNumber' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder clearCardNumber() {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder clearCardNumber() {
       cardNumber = null;
       fieldSetFlags()[8] = false;
       return this;
@@ -881,7 +881,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'passed'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder setPassed(Boolean value) {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder setPassed(Boolean value) {
       validate(fields()[9], value);
       this.passed = value;
       fieldSetFlags()[9] = true;
@@ -901,7 +901,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'passed' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder clearPassed() {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder clearPassed() {
       passed = null;
       fieldSetFlags()[9] = false;
       return this;
@@ -920,7 +920,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'password'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder setPassword(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder setPassword(String value) {
       validate(fields()[10], value);
       this.password = value;
       fieldSetFlags()[10] = true;
@@ -940,7 +940,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'password' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder clearPassword() {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder clearPassword() {
       password = null;
       fieldSetFlags()[10] = false;
       return this;
@@ -959,7 +959,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'verificationType'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder setVerificationType(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder setVerificationType(String value) {
       validate(fields()[11], value);
       this.verificationType = value;
       fieldSetFlags()[11] = true;
@@ -979,7 +979,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'verificationType' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder clearVerificationType() {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder clearVerificationType() {
       verificationType = null;
       fieldSetFlags()[11] = false;
       return this;
@@ -998,7 +998,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'QRCode'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder setQRCode(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder setQRCode(String value) {
       validate(fields()[12], value);
       this.QRCode = value;
       fieldSetFlags()[12] = true;
@@ -1018,7 +1018,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'QRCode' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder clearQRCode() {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder clearQRCode() {
       QRCode = null;
       fieldSetFlags()[12] = false;
       return this;
@@ -1037,7 +1037,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'meta'.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder setMeta(String value) {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder setMeta(String value) {
       validate(fields()[13], value);
       this.meta = value;
       fieldSetFlags()[13] = true;
@@ -1057,7 +1057,7 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'meta' field.
       * @return This builder.
       */
-    public com.dycn.healthairport.faceplate.avro.AccessRecordV2.Builder clearMeta() {
+    public com.dycn.airportconsumer.faceplate.avro.AccessRecordV2.Builder clearMeta() {
       meta = null;
       fieldSetFlags()[13] = false;
       return this;
@@ -1073,8 +1073,8 @@ public class AccessRecordV2 extends org.apache.avro.specific.SpecificRecordBase 
         record.featureIndex = fieldSetFlags()[3] ? this.featureIndex : (String) defaultValue(fields()[3]);
         record.featureMd5 = fieldSetFlags()[4] ? this.featureMd5 : (String) defaultValue(fields()[4]);
         record.similarity = fieldSetFlags()[5] ? this.similarity : (String) defaultValue(fields()[5]);
-        record.imagesList = fieldSetFlags()[6] ? this.imagesList : (java.util.List<com.dycn.healthairport.faceplate.avro.ImageStructV2>) defaultValue(fields()[6]);
-        record.featuresList = fieldSetFlags()[7] ? this.featuresList : (java.util.List<com.dycn.healthairport.faceplate.avro.FaceFeatureStructV2>) defaultValue(fields()[7]);
+        record.imagesList = fieldSetFlags()[6] ? this.imagesList : (java.util.List<com.dycn.airportconsumer.faceplate.avro.ImageStructV2>) defaultValue(fields()[6]);
+        record.featuresList = fieldSetFlags()[7] ? this.featuresList : (java.util.List<com.dycn.airportconsumer.faceplate.avro.FaceFeatureStructV2>) defaultValue(fields()[7]);
         record.cardNumber = fieldSetFlags()[8] ? this.cardNumber : (String) defaultValue(fields()[8]);
         record.passed = fieldSetFlags()[9] ? this.passed : (Boolean) defaultValue(fields()[9]);
         record.password = fieldSetFlags()[10] ? this.password : (String) defaultValue(fields()[10]);
