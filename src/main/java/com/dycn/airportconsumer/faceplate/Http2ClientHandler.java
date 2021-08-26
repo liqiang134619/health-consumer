@@ -201,25 +201,58 @@ public class Http2ClientHandler extends DelegatingDecompressorFrameListener {
     private Semaphore mUpdateRepoSettingsSemaphore = new Semaphore(1);
 
 
-    public void updateRepoSettings(String url, String username, String password, int repoSize, OperationType operationType,
-                                   File[] fileArray, String cardNo) throws Exception {
-        for (int i = 0; i < fileArray.length; i += UPDATE_REPO_BATCH_SIZE) {
-
-            File[] filesBatch = Arrays.copyOfRange(fileArray, i, Math.min(fileArray.length, i + UPDATE_REPO_BATCH_SIZE));
-            List<GenericRecord> operations = UpdateRepo.buildOperationList(operationType, filesBatch, cardNo);
-
-            ByteBuf content = AvroUtil.encode(Operation.getClassSchema(), operations);
-            mUpdateRepoSettingsSemaphore.acquire();
-            mLogger.info(i/UPDATE_REPO_BATCH_SIZE + " batch");
-            sendPostRequest(mChannelHandlerContext, content, url, username, password);
-            content.release();
-        }
-    }
+//    public void updateRepoSettings(String url, String username, String password, int repoSize, OperationType operationType,
+//                                   File[] fileArray, String cardNo) throws Exception {
+//        for (int i = 0; i < fileArray.length; i += UPDATE_REPO_BATCH_SIZE) {
+//
+//            File[] filesBatch = Arrays.copyOfRange(fileArray, i, Math.min(fileArray.length, i + UPDATE_REPO_BATCH_SIZE));
+//            List<GenericRecord> operations = UpdateRepo.buildOperationList(operationType, filesBatch, cardNo);
+//
+//            ByteBuf content = AvroUtil.encode(Operation.getClassSchema(), operations);
+//            // 3秒钟获取不到锁
+//            if (!mUpdateRepoSettingsSemaphore.tryAcquire(3, TimeUnit.SECONDS)) {
+//                int i1 = mUpdateRepoSettingsSemaphore.availablePermits();
+//                mLogger.info("========availablePermits==========> 获取不到信号：{}",i1);
+//                mLogger.info("========重新建立信号量==========> ");
+//                mUpdateRepoSettingsSemaphore = new Semaphore(1);
+//                mUpdateRepoSettingsSemaphore.acquire();
+//            } else {
+//                mUpdateRepoSettingsSemaphore.acquire();
+//
+//            }
+//            mLogger.info(i/UPDATE_REPO_BATCH_SIZE + " batch");
+//            sendPostRequest(mChannelHandlerContext, content, url, username, password);
+//            content.release();
+//        }
+//    }
 
     public void updateRepoSettings(String url, String username, String password, int repoSize, OperationType operationType, InputStream inputStream, String name, String cardNo) throws Exception {
         List<GenericRecord> operations = UpdateRepo.buildOperationList(operationType, inputStream, cardNo, name);
         ByteBuf content = AvroUtil.encode(Operation.getClassSchema(), operations);
-        mUpdateRepoSettingsSemaphore.acquire();
+//        int availablePermits = mUpdateRepoSettingsSemaphore.availablePermits();
+//        mLogger.info("=========availablePermits:{}=====",availablePermits);
+//        mUpdateRepoSettingsSemaphore.acquire();
+        // tryAcquire 会获取一个信号量的
+        if (!mUpdateRepoSettingsSemaphore.tryAcquire(5, TimeUnit.SECONDS)) {
+            mLogger.info("========重新建立信号量==========> ");
+            mUpdateRepoSettingsSemaphore = new Semaphore(1);
+            mUpdateRepoSettingsSemaphore.acquire();
+        }
+        // 3秒钟获取不到锁
+//        int queueLength = mUpdateRepoSettingsSemaphore.getQueueLength();
+//        mLogger.info("========queueLength==========> {}",queueLength);
+//
+//
+//        if (!mUpdateRepoSettingsSemaphore.tryAcquire(3, TimeUnit.SECONDS)) {
+//            int i1 = mUpdateRepoSettingsSemaphore.availablePermits();
+//            mLogger.info("========availablePermits==========> 获取不到信号：{}",i1);
+//            mLogger.info("========重新建立信号量==========> ");
+//            mUpdateRepoSettingsSemaphore = new Semaphore(1);
+//            mUpdateRepoSettingsSemaphore.acquire();
+//        } else {
+//            mUpdateRepoSettingsSemaphore.acquire();
+//
+//        }
         sendPostRequest(mChannelHandlerContext, content, url, username, password);
         content.release();
 
@@ -229,7 +262,11 @@ public class Http2ClientHandler extends DelegatingDecompressorFrameListener {
     public void updateRepoSettings(String url, String username, String password, OperationType operationType, List<String> list) throws  Exception {
         List<GenericRecord> operations = UpdateRepo.buildOperationList(operationType, list);
         ByteBuf content = AvroUtil.encode(Operation.getClassSchema(), operations);
-        mUpdateRepoSettingsSemaphore.acquire();
+//        if (!mUpdateRepoSettingsSemaphore.tryAcquire(5, TimeUnit.SECONDS)) {
+//            mLogger.info("========重新建立信号量==========> ");
+//            mUpdateRepoSettingsSemaphore = new Semaphore(1);
+//            mUpdateRepoSettingsSemaphore.acquire();
+//        }
         sendPostRequest(mChannelHandlerContext, content, url, username, password);
         content.release();
     }
@@ -599,7 +636,7 @@ public class Http2ClientHandler extends DelegatingDecompressorFrameListener {
         mLastPingAckTime = System.currentTimeMillis();
         mChannelHandlerContext = ctx;
         String requestUrl = mConnectionRequestMap.get(streamId);
-        //mLogger.info("[ onHeadersRead ] streamId: {}, host: {}, requestUrl: {}, status: {}, ctx is live? {},", streamId, mHost, requestUrl, headers.status(), ctx.channel().isActive());
+//        mLogger.info("[ onHeadersRead ] streamId: {}, host: {}, requestUrl: {}, status: {}, ctx is live? {},", streamId, mHost, requestUrl, headers.status(), ctx.channel().isActive());
         mHeaderStatusMap.put(streamId, headers.status());
         if (StringUtil.isNullOrEmpty(requestUrl)) {
             return;

@@ -23,11 +23,20 @@ public class TopicRabbitConfig {
     //队列bean的名称
     public static final String PERSON_QUEUE = "person_queue";
 
+
+    public static final String PERSON_DELETED_QUEUE = "person_deleted_queue";
+
+
     /**
      * 交换机的名称
      */
     public static final String PERSON_ROUTING_EXCHANGE = "person_topics_exchange";
 
+
+    /**
+     * 交换机2
+     */
+    private static  final String DELETED_FACE_EXCHANGE = "deleted_face_exchange";
 
 
 
@@ -37,6 +46,11 @@ public class TopicRabbitConfig {
         return new Queue("person_queue_01");
     }
 
+
+    @Bean(PERSON_DELETED_QUEUE)
+    public Queue personDeletedQueue() {
+        return new Queue("person_deleted_queue_01");
+    }
 
 
     /**
@@ -49,6 +63,29 @@ public class TopicRabbitConfig {
 
 
     /**
+     * 交换机配置
+     */
+    @Bean(DELETED_FACE_EXCHANGE)
+    public TopicExchange exchangeTopicsInform2() {
+        return ExchangeBuilder.topicExchange(DELETED_FACE_EXCHANGE).durable(true).build();
+    }
+
+
+    /**
+     * 绑定队列到交换机
+     * @param queue 队列
+     * @param exchange 交换机
+     * @return
+     */
+    @Bean
+    public Binding binding2(@Qualifier(PERSON_DELETED_QUEUE) Queue queue, @Qualifier(DELETED_FACE_EXCHANGE) TopicExchange exchange) {
+        return BindingBuilder.bind(queue).to(exchange).with("face.deleted");
+    }
+
+
+
+
+    /**
      * 绑定队列到交换机
      * @param queue 队列
      * @param exchange 交换机
@@ -58,6 +95,7 @@ public class TopicRabbitConfig {
     public Binding binding(@Qualifier(PERSON_QUEUE) Queue queue, @Qualifier(PERSON_ROUTING_EXCHANGE) TopicExchange exchange) {
         return BindingBuilder.bind(queue).to(exchange).with("topic.message");
     }
+
 
 
 

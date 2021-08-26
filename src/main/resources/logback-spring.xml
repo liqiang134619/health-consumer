@@ -10,9 +10,9 @@
 <configuration scan="true" scanPeriod="60 seconds" debug="false">
     <!-- 基础参数定义 -->
     <!-- 服务名称 -->
-    <property name="serviceName" value="health-airport"/>
+    <property name="serviceName" value="health-consumer"/>
     <!-- 服务名称 -->
-    <property name="basePackage" value="com.dycn.healthairport"/>
+    <property name="basePackage" value="com.dycn.healthconsumer"/>
     <!-- 定义日志文件 输入位置 -->
     <property name="logDir" value="doc-logs"/>
     <!-- 日志最大的历史 30天 -->

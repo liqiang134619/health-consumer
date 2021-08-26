@@ -40,7 +40,7 @@ public class Http2DeviceController {
     public void updateRepoSettings(String url, String username, String password, int repoSize,
                                    OperationType operationType, File[] fileArray, String cardNo) {
         try {
-            mHttp2ClientHandler.updateRepoSettings(url, username, password, repoSize, operationType, fileArray, cardNo);
+//            mHttp2ClientHandler.updateRepoSettings(url, username, password, repoSize, operationType, fileArray, cardNo);
         } catch (Exception e) {
             e.printStackTrace();
             mLogger.error("error: " + e.getMessage());
