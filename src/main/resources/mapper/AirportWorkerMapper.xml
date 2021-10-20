@@ -33,5 +33,16 @@
     <sql id="Base_Column_List">
         id, p_dept, dept, work_dept, name, on_job, id_card, id_type, address, local_address, phone, job_name, testing_frequency, risk_level, test_count, is_testing, last_test_time, is_vaccination, last_vaccination_time, next_test_time, create_time, update_time, deleted
     </sql>
+    <select id="listfs" resultType="com.dycn.airportconsumer.common.NoModel">
+
+        select  t2.id_card,t2.name,t2.img_url
+        from airport_worker t2 where dept in (select dept_name from (with recursive cet AS (
+            select * from airport_dept where deleted = 0
+
+                                         and id = 46
+            union
+            select t1.* FROM airport_dept t1 inner join cet t on t.id = t1.p_id and t1.deleted = 0
+        ) select * from cet) t1) and t2.deleted = 0 and LENGTH(t2.img_url) > 0 and t2.next_nad_examine_time2 > NOW()
+    </select>
 
 </mapper>

@@ -43,6 +43,7 @@ public class SyncFuture<T> implements Future<T> {
 
     @Override
     public T get() throws InterruptedException, ExecutionException {
+        //调用await()方法的线程会被挂起，它会等待直到count值为0才继续执行
         latch.await();
         return this.response;
     }
@@ -58,6 +59,7 @@ public class SyncFuture<T> implements Future<T> {
     // 用于设置响应结果，并且做countDown操作，通知请求线程
     public void setResponse(T response) {
         this.response = response;
+        //将count值减1
         latch.countDown();
     }
 

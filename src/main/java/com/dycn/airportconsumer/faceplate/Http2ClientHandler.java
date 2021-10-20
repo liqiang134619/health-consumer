@@ -233,7 +233,7 @@ public class Http2ClientHandler extends DelegatingDecompressorFrameListener {
 //        mLogger.info("=========availablePermits:{}=====",availablePermits);
 //        mUpdateRepoSettingsSemaphore.acquire();
         // tryAcquire 会获取一个信号量的
-        if (!mUpdateRepoSettingsSemaphore.tryAcquire(5, TimeUnit.SECONDS)) {
+        if (!mUpdateRepoSettingsSemaphore.tryAcquire(8, TimeUnit.SECONDS)) {
             mLogger.info("========重新建立信号量==========> ");
             mUpdateRepoSettingsSemaphore = new Semaphore(1);
             mUpdateRepoSettingsSemaphore.acquire();
@@ -649,7 +649,7 @@ public class Http2ClientHandler extends DelegatingDecompressorFrameListener {
         // mLogger.info("schema: " + schemaString);
         mSchemaMap.put(streamId, schemaString);
 
-        //  mLogger.info(String.format("onHeadersRead, requesturl:%s, headers:%s", requestUrl, getHeaders(headers, "")));
+          mLogger.info(String.format("onHeadersRead, requesturl:%s, headers:%s", requestUrl, getHeaders(headers, "")));
 
 
         // 收到门禁回复OK后再传输下一段人像

@@ -52,6 +52,14 @@ public class UpdateRepo {
     }
 
     public static Person createPerson(String id, InputStream inputStream, String cardNo, String name) throws NoSuchAlgorithmException {
+
+        if(inputStream == null && name == null) {
+            Person personInfo = new Person();
+            personInfo.setId(id);
+            personInfo.setCardNo(cardNo);
+            return personInfo;
+        }
+
         String otherInfo = cardNo + "_" + name;
         MessageDigest messageDigest = MessageDigest.getInstance("MD5");
         messageDigest.update(otherInfo.getBytes());
